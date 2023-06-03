@@ -1,0 +1,122 @@
+@import 'var.scss';
+.video {
+    @include wrapper;
+    padding-top: 90px;
+    padding-bottom: 125px;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+.video__name {
+    display:flex;
+    align-items: center;
+    gap:120px;
+    padding-bottom: 90px;
+
+}
+.video__name__h {
+    font-family: $Forum;
+    font-size: 80px;
+    color:$colorH;
+}
+.video__name__text {
+    font-family: $Roboto;
+    font-size: 22px;
+
+}
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper2 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper2 swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 1024px){
+    .video {
+      padding-top: 70px;
+    }
+    .video__name{
+      padding-bottom: 40px;
+    }
+    .video__name__text{
+      display: none;
+    }
+    .video{
+      align-items: start;
+    }
+    .video__name__h{
+      font-size: 50px;
+    }
+  }
+  @media(max-width: 768px){
+    .video__name__h{
+      font-size: 40px;
+    }
+    .video{
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
+    .video__name {
+      padding-bottom: 20px;
+  }
+  }
+  @media(max-width: 420px){
+    .video__name__h{
+      font-size: 28px;
+    }
+  }

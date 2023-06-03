@@ -1,0 +1,100 @@
+@import 'var.scss';
+.explore {
+    @include wrapper;
+    background-color: $Black;
+    color: $white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display:flex;
+    gap: 65px;
+}
+.explore__inf {
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    width: 100%;
+}
+.explore__inf__h {
+    font-family: $Forum;
+    font-size: 80px;
+}
+.explore__inf__line {
+    width: 100%;
+    height: 3px;
+    background-color:$lineColor ;
+}
+.explore__inf__text {
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+    padding-top: 40px;
+
+    font-family: $Roboto;
+    span{
+        color: $colorException;
+    }
+}
+
+@media (max-width: 1160px){
+.explore {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .explore__inf__text__item3{
+        display:none
+    }
+}
+.explore__inf__text {
+    gap:0;
+    padding-top: 0;
+}
+.explore__inf__h{
+    font-size: 50px;
+}
+}
+@media(max-width: 767px){
+    .explore__inf__text__item{
+        display: none;
+    }
+    .explore{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap:0;
+    }
+    .explore__inf__h{
+        font-size: 40px;
+    }
+}
+@media(max-width: 736px) {
+    .slider{
+        img{
+            width: 620px;
+            height: 600px;
+        }
+    }
+}
+@media(max-width: 650px) {
+    .slider{
+        img{
+            width: 520px;
+            height: 500px;
+        }
+    }
+}
+@media(max-width: 548px) {
+    .slider{
+        img{
+            width: 420px;
+            height: 400px;
+        }
+    }
+}
+@media(max-width: 438px) {
+    .slider{
+        img{
+            width: 380px;
+            height: 368px;
+        }
+    }
+}

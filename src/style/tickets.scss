@@ -1,0 +1,255 @@
+@import 'var.scss';
+.tickets {
+    @include wrapperForTickers;
+    padding-top: 85px;
+
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+
+    font-family: $Roboto;
+}
+.tickets__name {
+    font-size: 80px;
+    color: $colorH;
+    font-family: $Forum;
+}
+.tickets__line {
+    width: 100%;
+    height: 3px;
+    background-color: $lineColor;
+}
+.tickets__inf {
+    padding-top: 20px;
+
+    display: flex;
+    gap:60px;
+}   
+.wrapper-for-calc{
+    display:flex;
+    gap:270px;
+}
+.tickets__inf__calc__items__h, .tickets__inf__calc__amount__total,.tickets__inf__calc__amount__h{
+    font-size: 28px;
+    font-weight: bold;
+}
+.tickets__inf__calc__items{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+        input {
+         cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+      
+        border: 2px solid #999;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 5px;
+      
+        position: relative;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      }
+      
+      input:checked {
+        border: 5px solid black;
+      }
+      label{
+        cursor: pointer;
+      }
+}
+.flexWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickets__inf__calc__amount {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: flex-end;
+}
+
+.wr, .wr2{
+    display: flex;
+    border: 2px solid $Black;
+    width: 120px;
+}
+.wr3, .wr4 {
+    display: flex;
+    border: 2px solid $Black;
+    width: 150px;
+
+
+}
+#count,#count2, #count3, #count4 {
+    width: 85px;
+    text-align: center;
+    border: none;
+}
+
+#bminus, #bplus, #bminus2, #bplus2, #bminus3, #bplus3, #bminus4, #bplus4{
+    width: 35px;
+    border: none;
+    font-size: 32px;
+    background-color: $white;
+   
+}
+#bminus3, #bplus3, #bminus4, #bplus4{
+        background-color: $Black;
+        color: $white;
+        width: 50px;
+    }
+
+.tickets__inf__calc__amount__batton__item {
+    width: 175px;
+    height: 50px;
+    background-color: $Black;
+    color: $white;
+    border-color: $Black;
+    border-radius: 8px;
+}
+.tickets__inf__calc__amount__total{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.wrapper-for-radiobtn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#openBtn{
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+#openBtn:hover{
+    background-color: #d7d7d7;
+    color: $colorH
+}
+.forMedia{
+    display: none;
+}
+@media(max-width:1858px){
+    .wrapper-for-calc{
+        gap:140px;
+    }
+}
+@media(max-width: 1627px){
+    .wrapper-for-calc{
+        gap:20px;
+    }
+}
+@media(max-width: 1510px){
+    .tickets__inf__foto{
+        img{
+            width: 700px;
+            height: 440px;
+        }
+    }
+    .tickets__inf{
+        gap:0px;
+    }
+}
+
+@media(max-width: 1024px){
+    .tickets__inf__calc__items{
+        display: none;
+    }
+    .tickets__inf__calc__amount__batton__item{
+        width: 175px;
+        height: 50px;
+    }
+    .tickets__inf__calc__amount{
+        align-items: flex-start;
+    }
+    .wr, .wr2 {
+        width: 170px;
+    }
+    .tickets__inf__calc__amount{
+        gap:37px;
+    }
+}
+
+@media(max-width: 900px){
+    .tickets__inf__foto{
+        img{
+            width: 600px;
+            height: 440px;
+        }
+    }
+}
+@media(max-width: 813px){
+    .tickets__inf__foto{
+        img{
+            width: 500px;
+            height: 400px;
+        }
+    }
+    .tickets__inf {
+        gap: 20px;
+    }
+}
+@media(max-width: 725px){
+    .tickets__inf__foto{
+        img{
+            width: 400px;
+            height: 350px;
+        }
+    }
+    .tickets__inf {
+        gap: 20px;
+    }
+}
+@media(max-width: 648px){
+    .tickets__inf__foto{
+        display: none;
+    }
+    .forMedia{
+        display: block;
+    }
+    .tickets__inf__foto{
+        img{
+            width: 380px;
+            height: 160px;
+        }
+    }
+    .tickets__inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .tickets__name{
+        font-size: 28px;
+    }
+    .tickets__inf{
+        gap: 10px;
+    }
+    .tickets{
+        padding-top: 55px;
+        gap:30px;
+    }
+    .tickets__inf__calc__amount{
+        gap:20px;
+        align-items: center;
+    }
+    
+}
+@media(max-width: 648px){
+    .tickets__inf__calc__amount__total{
+        font-size: 16px;
+    }
+    .tickets__inf__calc__amount__h{
+        font-size: 16px;
+    }
+}

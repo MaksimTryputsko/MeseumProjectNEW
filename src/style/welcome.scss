@@ -1,0 +1,308 @@
+@import 'var.scss';
+
+.Welcome {
+    @include wrapper;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $Black;
+    color: $white;
+}
+.Welcome-Wrapper{
+    background-color: $Black;
+    padding-bottom: 60px;
+}
+.Welcome__inf {
+      transform:translateX(117.5px);
+      z-index:2;
+    
+}
+.Welcome__inf__h {
+    text-align: left;
+    font-family: $Forum;
+    font-size: 75px;
+   
+}
+.Welcome__inf__text {
+    font-family: $Roboto;
+    font-size: 28px;
+
+    padding-top: 10px;
+}
+.Welcome__inf__btn {
+    padding-top: 70px;
+    
+}
+.Welcome__inf__btn__button {
+    background-color: #710707;
+    color: $white;
+    width: 330px;
+    height: 75px;
+
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    
+    font-family: $Roboto;
+}
+.Welcome__inf__btn__button:hover{
+    background: goldenrod;
+}
+.wrapper-for-menuFlex{
+    @include wrapper;
+     display:flex;
+    justify-content: flex-end;
+    background-color: $Black;
+
+}
+
+.swiper {
+    width: 900px;
+    height: 700px;
+}
+
+.swiper-pagination{
+    span{
+        width: 16px;
+        height: 16px;
+        border-radius: 0px;
+        background-color: #D2B183;
+    }
+}
+.Welcome-Wrapper__menu{
+    @include wrapper;
+    background-color: $Black;
+    height: 60px;
+     display:flex;
+    flex-direction: row-reverse;
+    
+    
+}
+.swiper-button-prev, .swiper-button-next {
+    padding-top: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+}
+a:hover{
+    color: $colorH;
+    font-weight: bold;
+}
+.burger{
+    background-image: url(/src/img/burger/Group\ 44\ \(2\).svg);
+    width: 25px;
+    height: 18px;
+    display: none;
+}
+.burgerX{
+    background-image: url(/src/img/burger/esc.svg);
+    width: 25px;
+    height: 25px;
+}
+.brForMedia{
+    display: none;
+}
+.newNav{
+    display: none;
+}
+.Menu-ForBurger{
+    ul{
+    display: none;
+    list-style-type: none;
+    font-family: $Roboto;
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 150px;
+    padding-bottom: 190px;
+    .three{
+            padding-left: 50px;
+        }
+    }
+    #one{
+        padding-left: 35px;
+    }
+    #two{
+        padding-left: 35px;
+    }
+    #four{
+        padding-left: 38px;
+    }
+    #five{
+        padding-left: 35px;
+    }
+    #sex{
+        padding-left: 17px;
+    }
+    // position: relative;
+}
+
+.Menu-ForBurger-Open{
+    ul{
+       display: flex; 
+    }
+    
+}
+@media (max-width: 1276px) {
+ 
+    .swiper {
+        width: 600px;
+        height: 400px;
+        img{
+            width: 700px;
+            height: 400px;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+    .Welcome__inf__h {
+        text-align: left;
+        font-family: $Forum;
+        font-size: 50px;
+    }
+    .Welcome__inf__text{
+        font-size: 24px;
+    }
+    .Welcome__inf__btn__button{
+        width: 300px;
+        height: 60px;
+    
+    }
+    .Welcome__inf__h{
+        width: 500px;
+        letter-spacing: .5rem;
+        position: absolute;
+        top: -130px;
+    }
+    .Welcome__inf {
+    transform:translateX(40.5px);
+    z-index:2;
+    padding-bottom: 70px;
+    }
+    .Welcome{
+        align-items: end;
+    }
+    .Welcome__inf__btn {
+        padding-top: 40px;
+    }
+    .brForMedia{
+        display: block;
+    }
+}
+
+@media(max-width: 1024px){
+    .burger{
+        display: block;
+    }   
+    .header__LOUVRE-Menu{
+        display: none;
+    }
+}
+
+@media(max-width:913px){
+
+    .swiper {
+        width: 550px;
+        height: 450px;
+        img{
+            width: 550px;
+            height: 450px;
+        }
+    }
+    .Menu-ForBurger ul {
+        padding-bottom: 140px;
+    }
+}
+
+@media(max-width:861px){
+    .swiper {
+        width: 450px;
+        height: 350px;
+        img{
+            width: 450px;
+            height: 350px;
+        }
+    }
+    .Welcome__inf__h {
+        top: -120px
+    }
+}
+
+@media(max-width: 768px){
+    .Menu-ForBurger ul{
+        padding-right: 0px;
+        padding-bottom: 35px;
+        padding-left: 35px;
+    }
+    .swiper {
+        width: 700px;
+        height: 520px;
+        img{
+            width: 700px;
+            height: 520px;
+        }
+    }
+    .Welcome {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Welcome__inf__btn__button{
+        display: none;
+    }
+    .Welcome__inf__h{
+        position: relative;
+        top:0;
+    }
+    .Welcome__inf{
+        padding-bottom: 0px;
+    }
+    .Welcome__inf__h{
+        text-align: center;
+        letter-spacing: 0.2rem;
+        padding-bottom: 20px;
+    }
+    .Welcome__inf__text{
+        text-align: center;
+    }
+}
+
+@media(max-width: 718px){
+    .swiper {
+        width: 540px;
+        height: 440px;
+        img{
+            width: 540px;
+            height: 440px;
+        }
+    }
+    .Menu-ForBurger ul{
+        padding-left: 0;
+    }
+}
+@media(max-width: 568px){
+    .Welcome__inf {
+        transform: translateX(0.5px);
+    }
+    .Welcome__inf__h{
+        padding-bottom: 35px;
+        font-size: 28px;
+        span{
+            display: none;
+        }
+    }
+    .Welcome__inf__text{
+        font-size: 16px;
+    }
+    .swiper {
+        width: 380px;
+        height: 285px;
+        img{
+            width: 380px;
+            height: 285px;
+        }
+    }
+}

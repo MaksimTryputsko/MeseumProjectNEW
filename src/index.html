@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  
+</head>
+<body>
+    <header>
+        <div class="header__LOUVRE">
+            <div><img src="img/header/Vector.svg"></div>
+            <div class="header__LOUVRE__text">LOUVRE</div>
+        </div>
+        <div class="header__LOUVRE-Menu">
+            <ul>
+                <li><a href="#targetVisiting" class="scroll">Visiting</a></li>
+                <li><a href="#targetExplore" class="scroll">Explore</a></li>
+                <li><a href="#targetVideo" class="scroll">Video</a></li>
+                <li><a href="#targetGallery" class="scroll">Gallery</a></li>
+                <li><a href="#targetTickets" class="scroll">Tickets</a></li>
+                <li><a href="#targetContacts" class="scroll">Contacts</a></li>
+            </ul>
+            
+        </div>
+        <div class="burger">
+        <div class="modalForMedia"></div>
+            </div>
+    </header>
+    <body>
+        <div class="Welcome-Wrapper">
+            <div class="Welcome">
+                <div class="Menu-ForBurger">
+                        <ul>
+                           
+                            <li><a href="#targetVisiting" class="scroll">Visiting <span id="one">></span></a></li>
+                            <li><a href="#targetExplore" class="scroll">Explore <span id="two">></span></a></li>
+                            <li><a href="#targetVideo" class="scroll">Video <span class="three">></span></a></li>
+                            <li><a href="#targetGallery" class="scroll">Gallery <span id="four">></span></a></li>
+                            <li><a href="#targetTickets" class="scroll">Tickets <span id="five">></span></a></li>
+                            <li><a href="#targetContacts" class="scroll">Contacts <span id="sex">></span></a></li>
+                             
+                        </ul>
+                             <div class="blockMenu">
+                                <div class="imgs">
+                                        <img
+                                            src="img/modaForMedia/image 15.svg" 
+                                            alt="logo"
+                                        />
+                                    <img src="img/modaForMedia/image 16.svg" class="problemImg" alt="logo"/>
+                                    <img src="img/modaForMedia/image 17.svg" class="problemImg" alt="logo"/>
+                                </div>
+                                <div class="newImgs">
+                                    <img src="img/modaForMedia/420px/image 15.jpg" alt="logo"/>
+                                    <img src="img/modaForMedia/420px/image 3.jpg" alt="logo"/>
+                                    <img src="img/modaForMedia/420px/image 4.jpg" alt="logo"/>
+                                </div>
+                                <div class="lineMenu"></div>
+                                <div class="fotterForBlock footer__first__icons">
+                                    <div><img src="img/footer/icons/Frame (1).svg"  alt="logo"/></div>
+                                    <div><img src="img/footer/icons/Vector (2).svg" alt="logo"/></div>
+                                    <div><img src="img/footer/icons/Vector (3).svg" alt="logo"/></div>
+                                    <div><img src="img/footer/icons/Vector (4).svg" alt="logo"/></div>
+                                    <div><img src="img/footer/icons/Vector (5).svg" alt="logo"/></div>
+                                </div>
+                            </div>
+                    </div>
+                <div class="Welcome__inf">
+                    <div class="Welcome__inf__h">WELCOME<br><span class="brForMedia"><br></span>   
+                        TO THE LOUVRE</div>
+                    <div class="Welcome__inf__text">From the castle to the museum</div>
+                    <div class="Welcome__inf__btn">
+                        <button class="Welcome__inf__btn__button" type="button" >Discover the Louvre</button>
+                    </div>
+                   
+                </div> 
+                    
+                <div class="Welcome__img">
+                    
+                    <div class="swiper">
+                    
+                        <div class="swiper-wrapper">
+
+                          <div class="swiper-slide"><img src="img/Welcome/1.svg" alt="logo"/></div>
+                          <div class="swiper-slide"><img src="img/Welcome/2.jpg" alt="logo"/></div>
+                          <div class="swiper-slide"><img src="img/Welcome/3.jpg" alt="logo"/></div>
+                          <div class="swiper-slide"><img src="img/Welcome/4.jpg" alt="logo"/></div>
+                          <div class="swiper-slide"><img src="img/Welcome/5.jpg" alt="logo"/></div>
+                       
+                        </div>
+              
+                        
+                        
+                            <img src="img/Welcome/arrow/1.svg" class="swiper-button-prev" alt="arrow"/>
+                            <img src="img/Welcome/arrow/2.svg" class="swiper-button-next" alt="arrow"/> 
+                            
+                        <div class="swiper-pagination">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                                                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+            <div class="Virtual-tour" id="targetVisiting">
+                <div class="Virtual-tour__wrapper">
+                    <div class="Virual-tour__h">VIRTUAL TOUR</div>
+                    
+                    <div class="Virtual-tour__line"></div>
+                </div>
+                <div class="Virtual-tour__flexBox">
+
+                    <div class="Virtual-tour__flexBox__item">
+                        
+                        <div class="Virtual-tour__flexBox__item__img" >
+                            <img src="img/Virtual-tour/Rectangle.svg" alt="logo"/>
+                        </div>
+                        <div class="Virtual-tour__flexBox__item__h3">Royal Palace</div>
+                        <div class="Virtual-tour__flexBox__item__line"></div>
+                        <div class="Virtual-tour__flexBox__item__name">360° Virtual Tour</div>
+                        <div class="Virtual-tour__flexBox__item__address">Google Street Panorama View</div>
+                    </div>
+
+                    <div class="Virtual-tour__flexBox__item">
+                        <div class="Virtual-tour__flexBox__item__img" >
+                            <img src="img/Virtual-tour/Rectangle (1).svg" alt="logo"/>
+                        </div>
+                        <div class="Virtual-tour__flexBox__item__h3">Denon Wing</div>
+                        <div class="Virtual-tour__flexBox__item__line"></div>
+                        <div class="Virtual-tour__flexBox__item__name">360° Virtual Tour</div>
+                        <div class="Virtual-tour__flexBox__item__address">Google Street Panorama View</div>
+                    </div>
+
+                    <div class="Virtual-tour__flexBox__item">
+                        <div class="Virtual-tour__flexBox__item__img" >
+                            <img src="img/Virtual-tour/Rectangle (2).svg" alt="logo"/>
+                        </div>
+                        <div class="Virtual-tour__flexBox__item__h3">Colonnade Perrault</div>
+                        <div class="Virtual-tour__flexBox__item__line"></div>
+                        <div class="Virtual-tour__flexBox__item__name">360° Virtual Tour</div>
+                        <div class="Virtual-tour__flexBox__item__address">Google Street Panorama View</div>
+                    </div>
+
+                    <div class="Virtual-tour__flexBox__item">
+                        <div class="Virtual-tour__flexBox__item__img" >
+                            <img src="img/Virtual-tour/Rectangle (3).svg" alt="logo"/>
+                        </div>
+                        <div class="Virtual-tour__flexBox__item__h3">Greek hall</div>
+                        <div class="Virtual-tour__flexBox__item__line"></div>
+                        <div class="Virtual-tour__flexBox__item__name">360° Virtual Tour</div>
+                        <div class="Virtual-tour__flexBox__item__address">Google Street Panorama View</div>
+                    </div>
+
+                    <div class="Virtual-tour__flexBox__item">
+                        <div class="Virtual-tour__flexBox__item__img" >
+                            <img src="img/Virtual-tour/Rectangle (4).svg" alt="logo"/>
+                        </div>
+                        <div class="Virtual-tour__flexBox__item__h3">Mona Lisa</div>
+                        <div class="Virtual-tour__flexBox__item__line"></div>
+                        <div class="Virtual-tour__flexBox__item__name">360° Virtual Tour</div>
+                        <div class="Virtual-tour__flexBox__item__address">Google Street Panorama View</div>
+                    </div>
+
+                    <div class="Virtual-tour__flexBox__item">
+                        <div class="Virtual-tour__flexBox__item__img" >
+                            <img src="img/Virtual-tour/Rectangle (5).svg" alt="logo"/>
+                        </div>
+                        <div class="Virtual-tour__flexBox__item__h3">Night Palace</div>
+                        <div class="Virtual-tour__flexBox__item__line"></div>
+                        <div class="Virtual-tour__flexBox__item__name">360° Virtual Tour</div>
+                        <div class="Virtual-tour__flexBox__item__address">Google Street Panorama View</div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore" id="targetExplore">
+                <div class="explore__inf">
+                    <div class="explore__inf__h">PICTURE EXPLORE</div>
+                    <div class="explore__inf__line"></div>
+                    <div class="explore__inf__text">
+                        <div class="explore__inf__text__item">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</div>
+                        <div class="explore__inf__text__item explore__inf__text__item2">It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</div>
+                        <div class="explore__inf__text__item explore__inf__text__item3">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <img-comparison-slider>
+                    <img slot="first" src="img/explore/before.jpg" width="720" height="700"/>
+                    <img slot="second" src="img/explore/after.jpg" width="720" height="700"/>
+                  </img-comparison-slider>
+                </div>
+        </div>
+
+
+        <div class="video" id="targetVideo">
+            <div class="video__name">
+                <div class="video__name__h">VIDEO JOURNEY</div>
+                <div class="video__name__text">Enter and visit one of the most famous museums in the world and enjoy<br> masterpieces such as Mona Lisa or Hammurabi's Code</div>
+            </div>
+            
+                <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+                thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true">
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster0.jpg">
+                        <source src="img/video/video0.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster1.jpg">
+                        <source src="img/video/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster2.jpg">
+                        <source src="img/video/video2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster3.jpg">
+                        <source src="img/video/video3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster4.jpg">
+                        <source src="img/video/video4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+              </swiper-container>
+            
+              <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+              watch-slides-progress="true">
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster0.jpg">
+                        <source src="img/video/video0.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster1.jpg">
+                        <source src="img/video/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster2.jpg">
+                        <source src="img/video/video2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster3.jpg">
+                        <source src="img/video/video3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                <swiper-slide>
+                    <video width="400" height="300" controls="controls" poster="img/video/poster4.jpg">
+                        <source src="img/video/video4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </swiper-slide>
+                
+              </swiper-container>
+            <!-- </div> -->
+
+            </div>
+        </div>
+        <div class="Art-gallery" id="targetGallery">
+            <div class="Art-gallery__text">ART GALLERY</div>
+            <div class="Art-gallery__items" >
+                <img src="img/galery/galery1.jpg"class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery2.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery3.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery4.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery5.jpg"  class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery6.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery7.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery8.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery9.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery10.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery11.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery12.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery13.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery14.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+                <img src="img/galery/galery15.jpg" class="wow fadeInUp" data-wow-duration="5s" alt="logo"/>
+            </div>
+        </div>
+        <div class="tickets" id="targetTickets">
+            <div class="tickets__name">BUY TICKETS</div>
+            <div class="tickets__line"></div>
+            <div class="tickets__inf">
+                <div class="tickets__inf__foto"><img src="img/ticket/Rectangle (6).svg" alt="logo"/></div>
+                <div class="forMedia"><img src="img/ticket/imgForMedia/Rectangle (7).svg" alt="logo"/></div>
+                <div class="tickets__inf__calc">
+                    <form>
+                            <div class="wrapper-for-calc">
+                                <div class="tickets__inf__calc__items">
+                                    <div class="tickets__inf__calc__items__h">Ticket Type</div>
+                                    <div class="flexWrapper">
+                                        <input type="radio" name="ticket" id="radioButton" value="first">
+                                        <label for="radioButton">Permanent exhibition</label>
+                                    </div>
+                                    <div class="flexWrapper">
+                                        <input type="radio" name="ticket" id="radioButton2" value="second" >
+                                        <label for="radioButton2">Temporary exhibition</label>
+                                    </div>
+                                    <div class="flexWrapper">
+                                        <input type="radio" name="ticket" id="radioButton3" value="third" >
+                                        <label for="radioButton3">Combined Admission</label>
+                                    </div>
+                                </div>
+                            
+                                <div class="tickets__inf__calc__amount">
+                                    <div class="tickets__inf__calc__amount__h">Amount</div>
+                                    <div>
+                                        <span>Basic 18+</span>
+                                        <div class="wr tickets__inf__calc__amount__item1">
+                                            <input type="button" value="-" id="bminus"/>
+                                            <input type="text" value="1" id="count"/>
+                                            <input type="button" value="+" id="bplus"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <span>Senior 65+</span>
+                                        <div class="wr2 tickets__inf__calc__amount__item2">
+                                            <input type="button" value="-" id="bminus2"/>
+                                            <input type="text" value="1" id="count2"/>
+                                            <input type="button" value="+" id="bplus2"/>
+                                        </div>
+                                    </div>
+                                    <div class="tickets__inf__calc__amount__total">Total € 30</div>
+                                    <div class="tickets__inf__calc__amount__batton">
+                                        <input type="button" value="Buy Now" class="tickets__inf__calc__amount__batton__item" id="openBtn"/>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="modal">
+                            <div class="modal__box">
+                                <div class="modal__box__close"><span class="close"><img src="img/modal/icon/Close.svg" alt="close"></span></div>
+                                <div class="wrapper-for-box">
+                                    <div class="modal__box__first">
+                                        <div class="moda__box__first__h">
+                                            <div class="moda__box__first__h__img"><img src="img/modal/logo.svg" alt="logo"/></div>
+                                            <div class="moda__box__first__h__text">BOOKING TICKETS</div>
+                                        </div>
+                                        <div class="moda__box__first__h2">
+                                                <div class="moda__box__first__h2__text">Tour to Louvre</div>
+                                                <div class="moda__box__first__h2__line"></div>
+                                        </div>
+                                        <div class="modal__box__first__inputItems">
+                                            <div class="inputItems__date-time">
+                                                <div class="inputItems__date-item__date">
+                                                    <div><img src="img/modal/imgForSelect/date (3).svg" alt="logo"/></div>
+                                                    <input type="date" class="inputItems__date-item__date__select" id="dateInput" min="2023-5-31"/>
+                                                </div>
+                                                <div class="inputItems__date-item__time">
+                                                    
+                                                    <div><img src="img/modal/imgForSelect/time.svg" alt="logo"/></div>
+                                                    <input type="time" id='timeInput' class="inputItems__date-item__date__select" min="09:00" max="18:00" required/>             
+                                                </div>
+                                            </div>
+                                            <dvi class="inputItems__name">
+                                                <div class="inputItems__name__img"><img class="inputItems__name__img__item" src="img/modal/imgForInput/name.svg" width="12" height="13" alt="logo"></div>
+                                                <div class="inputItems__name__input">
+                                                    <form>
+                                                        <input type="text" name="name" id="name" placeholder="Name"/>
+                                                    </form>
+                                                    <div id="errorForName"></div>
+                                                </div>
+                                            </dvi>
+                                            <dvi class="inputItems__email">
+                                                
+                                                <div class="inputItems__name__img"><img class="inputItems__name__img__item" src="img/modal/imgForInput/email.svg" width="12" height="13" alt="logo"></div>
+                                                <div class="inputItems__name__input">
+                                                    <form>
+                                                    <input type="email" name="email" id="email" placeholder="E-mail"/>
+                                                    </form>
+                                                    <div class="error"></div>
+                                                </div>
+                                                
+                                            </dvi>
+                                            <div class="inputItems__phone">
+                                                
+                                                <div class="inputItems__name__img"><img class="inputItems__name__img__item" src="img/modal/imgForInput/tel.svg" width="12" height="13" alt="logo"></div>
+                                                <div class="inputItems__name__input">
+                                                    <form>
+                                                    <label>
+                                                        <input type="text" id="phone" name="phone"placeholder="Phone"/>
+                                                    </label>
+                                                    
+                                                </form>
+                                                </div>
+                                            </div>
+                                            <div class="inputItems__value">
+                                                <div><img src="img/modal/imgForSelect/ballot.svg" alt="logo"/></div>
+                                                <select class="inputItems__value__section">
+                                                    <option value="" disabled selected>Ticket Type</option>
+                                                    <option value="firstT" class="optionTicket">Permanent exhibition</option>
+                                                    <option value="secondT" class="optionTicket">Temporary exhibition</option>
+                                                    <option value="thirdT" class="optionTicket">Combined Admission</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputItems__entryTicket">   
+                                                <div class="inputItems__entryTicket__h">Entry Ticket</div>
+                                                <div class="inputItems__entryTicket__line"></div>
+                                                <div class="inputItems__entryTicket__value1">
+                                                    <div class="inputItems__entryTicket__value1__text">Basic 18+ (<span class="basicPriceFirst">20</span> €)</div>
+                                                    <div class="wr3 tickets__inf__calc__amount__item1">
+                                                        <input type="button" value="-" id="bminus3"/>
+                                                        <input type="text" value="1" id="count3"/>
+                                                        <input type="button" value="+" id="bplus3"/>
+                                                    </div>
+                                                </div>
+                                                <div class="inputItems__entryTicket__value2">
+                                                    <div class="inputItems__entryTicket__value2__text">Senior 65+ (<span class="seniorPriceFirst">10</span> €)</div>
+                                                    <div class="wr4 tickets__inf__calc__amount__item2">
+                                                        <input type="button" value="-" id="bminus4"/>
+                                                        <input type="text" value="1" id="count4"/>
+                                                        <input type="button" value="+" id="bplus4"/>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal__box__second">
+                                        <div>
+                                            <div class="wrapper-for-overview">
+                                                <div class="modal__box__second__Overview">
+                                                    <div class="modal__box__second__Overview__h">Overview</div>
+                                                    <div class="modal__box__second__Overview__text">Tour to Louvre</div>
+                                                    <div class="modal__box__second__Overview__date"><img src="img/modal/icon/date.svg" alt="logo"/><span class="dateSpan">Friday, August 19</span></div>
+                                                    <div class="modal__box__second__Overview__time"><img src="img/modal/icon/Time.svg" alt="logo"/><span class="timeSpan">16 : 30</span></div>
+                                                
+                                                </div>
+                                                <div class="modal__box__second__img"><img src="img/modal/imgForModal/Rectangle 4.svg" alt="logo"/></div>
+                                            </div> <div class="modal__box__second__Overview__value"><img src="img/modal/icon/value.svg" alt="logo"/><span class="valueSpan">Permanent exhibition</span></div>
+                                        </div>
+                                        <div class="modal__box__second__total">
+                                            
+                                            <div class="modal__box__second__total__basic">
+                                                <div class="wrapperForSumOfBasic">
+                                                    <span class="quantinyOfBasic">1</span>
+                                                    <div>Basic (<span class="SumOfBasic">20</span> €)</div>
+                                                </div>
+                                                <div><span class="totalSumOfBasic">20</span> €</div>
+                                            </div>
+                                            <div class="modal__box__second__total__senior">
+                                                <div class="wrapperForSumOfSenior">
+                                                    <span class="quantinyOfSenior">1</span>
+                                                    <div>Senior (<span class="SumOfSenior">10</span> €)</div>
+                                                </div>
+                                                <div><span class="totalSumOfSenior">10</span> €</div>
+                                            </div>
+                                            <div class="modal__box__second__total__line"></div>
+                                            <div class="modal__box__second__total__totalSum">
+                                                <div class="modal__box__second__total__totalSum__h">Total:</div>
+                                                <div><span class="totalSumGeneral">30</span> €</div>
+                                            </div>
+                                        </div>
+                                        <div class="wrapper-for-modal__box__second__card">
+                                            <div class="modal__box__second__card">
+                                                <div class="modal__box__second__card__line"></div>
+                                                <div class="wrapper-for-CVC"> 
+                                                    <span class="CVCspan">CVC/CVV</span>
+                                                    <label for="CVCinput">
+                                                       
+                                                        <input type="number" step="1" min="3" max="4" name="CVCinput" id="CVCinput"/>
+                                                    </label>
+                                                    <span class="textForCVC"> The last<br> 
+                                                        3 or 4 digits<br>
+                                                        on back<br>
+                                                        of the card</span>
+                                                </div>
+                                                <div class="modal__box__second__card__second">
+                                                    <div class="test">
+                                                        <div>
+                                                            <div>
+                                                                <form><span>Card number</span>
+                                                                    <label>
+                                                                        <input type="number" id="cardNmr" name="cardNmr" pattern="[0-9]"/>
+                                                                    </label>
+                                                                </form>
+                                                            </div>
+                                                            <div class="wrapper-for-2input">
+                                                                
+                                                                <div>
+                                                                    <span>Expiration date</span>
+                                                                    <form>
+                                                                        <label>
+                                                                            
+                                                                            <select id="cardMonth" name="cardMonth">
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>
+                                                                                <option value="5">5</option>
+                                                                                <option value="6">6</option>
+                                                                                <option value="7">7</option>
+                                                                                <option value="8">8</option>
+                                                                                <option value="9">9</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                            </select>
+                                                                        </label> 
+                                                                        <label>
+                                                                           
+                                                                            <select id="cardMonth" name="cardMonth" id="cardYear" name="cardYear">
+                                                                                <option value="1">2023</option>
+                                                                                <option value="2">2022</option>
+                                                                                <option value="3">2021</option>
+                                                                                <option value="4">2020</option>
+                                                                                <option value="5">2019</option>
+                                                                                <option value="6">2018</option>
+                                                                                <option value="7">2017</option>
+                                                                                <option value="8">2016</option>
+                                                                                <option value="9">2015</option>
+                                                                                <option value="10">2014</option>
+                                                                                <option value="11">2013</option>
+                                                                                <option value="12">2012</option>
+                                                                            </select>
+                                                                        </label>
+                                                                    </form>
+                                                                    
+                                                                </div>
+                                                            
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrapper-for-2img">
+                                                            <div><img src="img/modal/imgForCards/Visa.svg" alt="logo"/></div>
+                                                            <div><img src="img/modal/imgForCards/Mastercard.svg" alt="logo"/></div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span>Cardholder name</span>
+                                                        <form>
+                                                            <label>
+                                                                <input type="text" id="cardNummer" name="cardName"/>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="wrapper-for-BookBtn"><input type="button" id="bookBtn" value="Book"/></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form> 
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="parallaxFoto">
+            <picture>
+                <source srcset="img/fotoInBody/forMediaParallax.svg" media="(max-width: 420px)">
+                <img src="img/fotoInBody/parallax 1.svg" alt="gallary" style="max-width: 100%;">
+            </picture>
+            
+        </div>
+
+        <div class="map__box" id="targetContacts">
+            <div class="map__h">CONTACTS</div>
+            <div class="map__line"></div>
+            <div class="map__block">
+                <div class="map__block__first">
+                    <div class="map__block__first__h">Palais Royal<br>Musee du Louvre</div>
+                    <div class="map__block__first__address">address: 75001 Paris, France</div>
+                    <div class="map__block__first__phone">phone: +33(0) 1 40 20 50 50</div>
+                    <div class="map__block__first__mail">mail: info@louvre.fr</div>
+                </div>
+                <div class="map__block__second">
+                    <div id="map"></div>
+
+    
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__first__wrapper">
+                <div class="footer__first__navItems footer__first">
+                    <div class="footer__first__h"><div><img src="img/footer/Frame.svg" alt="logo"/></div><div>LOUVRE</div></div>
+                    <div class="footer__first__nav1">
+                        <div class="footer__first__nav1__item1"><a href="#targetVisiting" class="scroll">Visiting</a></div>
+                        <div class="footer__first__nav1__item2"><a href="#targetExplore" class="scroll">Explore</a></div>
+                        <div class="footer__first__nav1__item3"><a href="#targetVideo" class="scroll">Video</a></div>
+                    </div>
+                    <div class="footer__first__nav2">
+                        <div class="footer__first__nav2__item1"><a href="#targetGallery" class="scroll">Gallery</a></div>
+                        <div class="footer__first__nav2__item2"><a href="#targetTickets" class="scroll">Tickets</a></div>
+                        <div class="footer__first__nav2__item3"><a href="#targetContacts" class="scroll">Contacts</a></div>
+                    </div>
+                </div>
+                <div class="footer__first__BoxIcons">
+                    <div class="footer__first__icons">
+                        <div><img src="img/footer/icons/Frame (1).svg" alt="logo"/></div>
+                        <div><img src="img/footer/icons/Vector (2).svg" alt="logo"/></div>
+                        <div><img src="img/footer/icons/Vector (3).svg" alt="logo"/></div>
+                        <div><img src="img/footer/icons/Vector (4).svg" alt="logo"/></div>
+                        <div><img src="img/footer/icons/Vector (5).svg" alt="logo"/></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__second">
+                <div class="footer__second__date">© 2021</div>
+                <div class="footer__second__school">The Rolling Scopes School</div>
+                <div class="footer__second__Username">Username</div>
+            </div>
+        </footer>
+    </body>  
+    <script
+    defer
+    src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="wow.min.js"></script>
+  
+  <script>
+  new WOW().init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moveTo/1.8.2/moveTo.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html> 

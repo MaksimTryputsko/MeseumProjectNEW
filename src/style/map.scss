@@ -1,0 +1,117 @@
+.map__box {
+    margin-top: 85px;
+    @include wrapper;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.map__h {
+    font-family: $Forum;
+    font-size: 80px;
+    color: $colorH;
+}
+.map__line {
+    width: 100%;
+    height: 3px;
+    background-color: $lineColor;
+}
+.map__block {
+    display:flex;
+    justify-content: space-between;
+}
+.map__block__first {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    font-family: $Roboto;
+    font-size: 22px;
+}
+.map__block__first__h {
+    font-size: 28px;
+    font-weight: bold;
+
+}
+#map {
+    height: 680px;
+     width: 960px;
+     filter: grayscale(100%);
+    }
+
+@media(max-width: 1578px){
+    #map {
+        height: 640px;
+         width: 760px;
+        }   
+}
+@media(max-width: 1373px){
+    #map {
+        height: 600px;
+         width: 660px;
+        }   
+}
+@media(max-width: 1024px){
+    .map__h{
+        font-size: 50px;
+    }
+    #map {
+        height: 454px;
+         width: 694px;
+        }
+        
+    .map__box {
+        gap:40px;
+    }   
+}
+@media(max-width: 871px){
+    .map__block {
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        }
+        #map {
+            height: 476px;
+             width: 728px;  
+            } 
+}
+@media(max-width:765px){
+    #map {
+        height: 476px;
+         width: 628px;  
+        }
+        .map__h{
+            font-size: 40px;
+        }
+        .map__box {
+            gap:20px;
+        }   
+        .map__block__first__h{
+            font-size: 20px;
+        }  
+}
+@media(max-width:664px){
+    #map {
+        height: 400px;
+         width: 528px;  
+        } 
+}
+@media(max-width: 561px){
+    #map {
+        height: 248px;
+         width: 380px;  
+        } 
+}
+@media(max-width: 420px){
+    .map__h{
+        font-size: 28px;
+    }
+    .map__box {
+        gap:15px;
+    } 
+    .map__block__first__h{
+        font-size: 16px;
+    } 
+    .map__block__first{
+        gap:20px
+    }
+}

@@ -1,0 +1,31 @@
+@import 'mixin.scss';
+@import 'var.scss';
+header{
+    height: 150px;
+    @include wrapper;
+    background-color: $Black;
+    color: $white;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header__LOUVRE {
+    display:flex;
+    align-items: center;
+    gap: 26px;
+    
+}
+
+.header__LOUVRE__text {
+    font-family: $Forum;
+    font-size: 28px;
+}
+.header__LOUVRE-Menu {
+    ul{ list-style-type: none;
+        font-family: $Roboto;
+        display:flex;
+        gap:55px;
+    }
+}
