@@ -15,12 +15,12 @@
 
 }
 .video__name__h {
-    font-family: $Forum;
+    font-family: $forum;
     font-size: 80px;
     color:$colorH;
 }
 .video__name__text {
-    font-family: $Roboto;
+    font-family: $roboto;
     font-size: 22px;
 
 }
@@ -32,7 +32,7 @@ swiper-container {
   swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: $white;
     display: flex;
     justify-content: center;
     align-items: center;

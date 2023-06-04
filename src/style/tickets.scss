@@ -7,12 +7,12 @@
     flex-direction: column;
     gap:50px;
 
-    font-family: $Roboto;
+    font-family: $roboto;
 }
 .tickets__name {
     font-size: 80px;
     color: $colorH;
-    font-family: $Forum;
+    font-family: $forum;
 }
 .tickets__line {
     width: 100%;
@@ -47,7 +47,7 @@
         width: 16px;
         height: 16px;
       
-        border: 2px solid #999;
+        border: 2px solid $colorForBorder;
         transition: 0.2s all linear;
         outline: none;
         margin-right: 5px;
@@ -61,7 +61,7 @@
       }
       
       input:checked {
-        border: 5px solid black;
+        border: 5px solid $black;
       }
       label{
         cursor: pointer;
@@ -82,12 +82,12 @@
 
 .wr, .wr2{
     display: flex;
-    border: 2px solid $Black;
+    border: 2px solid $black;
     width: 120px;
 }
 .wr3, .wr4 {
     display: flex;
-    border: 2px solid $Black;
+    border: 2px solid $black;
     width: 150px;
 
 
@@ -106,7 +106,7 @@
    
 }
 #bminus3, #bplus3, #bminus4, #bplus4{
-        background-color: $Black;
+        background-color: $black;
         color: $white;
         width: 50px;
     }
@@ -114,9 +114,9 @@
 .tickets__inf__calc__amount__batton__item {
     width: 175px;
     height: 50px;
-    background-color: $Black;
+    background-color: $black;
     color: $white;
-    border-color: $Black;
+    border-color: $black;
     border-radius: 8px;
 }
 .tickets__inf__calc__amount__total{
@@ -133,7 +133,7 @@
     cursor: pointer;
 }
 #openBtn:hover{
-    background-color: #d7d7d7;
+    background-color: $colorForHover;
     color: $colorH
 }
 .forMedia{
@@ -243,7 +243,6 @@
         gap:20px;
         align-items: center;
     }
-    
 }
 @media(max-width: 648px){
     .tickets__inf__calc__amount__total{

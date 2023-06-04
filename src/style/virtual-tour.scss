@@ -16,7 +16,7 @@
     width: 100%;
 }
 .Virual-tour__h {
-    font-family: $Forum;
+    font-family: $forum;
     font-size: 80px;
     color: $colorH;
     
@@ -35,12 +35,12 @@
     gap:50px;
 }
 .Virtual-tour__flexBox__item {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 15px;
 }
 .Virtual-tour__flexBox__item__h3 {
-    font-family: $Forum;
+    font-family: $forum;
     font-size: 32px;
 
 }
@@ -50,10 +50,10 @@
     background-color: $lineColor;
 }
 .Virtual-tour__flexBox__item__name {
-    font-family: $Roboto;
+    font-family: $roboto;
 }
 .Virtual-tour__flexBox__item__address {
-    font-family: $Roboto;
+    font-family: $roboto;
     font-weight: 18px;
 }
 @media(max-width: 1024px){

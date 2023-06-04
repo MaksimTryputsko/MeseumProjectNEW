@@ -6,11 +6,11 @@
     justify-content: center;
     align-items: center;
 
-    background-color: $Black;
+    background-color: $black;
     color: $white;
 }
 .Welcome-Wrapper{
-    background-color: $Black;
+    background-color: $black;
     padding-bottom: 60px;
 }
 .Welcome__inf {
@@ -20,12 +20,12 @@
 }
 .Welcome__inf__h {
     text-align: left;
-    font-family: $Forum;
+    font-family: $forum;
     font-size: 75px;
    
 }
 .Welcome__inf__text {
-    font-family: $Roboto;
+    font-family: $roboto;
     font-size: 28px;
 
     padding-top: 10px;
@@ -35,7 +35,7 @@
     
 }
 .Welcome__inf__btn__button {
-    background-color: #710707;
+    background-color: $lineColor;
     color: $white;
     width: 330px;
     height: 75px;
@@ -44,16 +44,16 @@
     border: none;
     cursor: pointer;
     
-    font-family: $Roboto;
+    font-family: $roboto;
 }
 .Welcome__inf__btn__button:hover{
-    background: goldenrod;
+    background: $gold;
 }
 .wrapper-for-menuFlex{
     @include wrapper;
      display:flex;
     justify-content: flex-end;
-    background-color: $Black;
+    background-color: $black;
 
 }
 
@@ -67,17 +67,15 @@
         width: 16px;
         height: 16px;
         border-radius: 0px;
-        background-color: #D2B183;
+        background-color: $spanColor;
     }
 }
 .Welcome-Wrapper__menu{
     @include wrapper;
-    background-color: $Black;
+    background-color: $black;
     height: 60px;
      display:flex;
     flex-direction: row-reverse;
-    
-    
 }
 .swiper-button-prev, .swiper-button-next {
     padding-top: 300px;
@@ -112,7 +110,7 @@ a:hover{
     ul{
     display: none;
     list-style-type: none;
-    font-family: $Roboto;
+    font-family: $roboto;
     flex-direction: column;
     gap: 12px;
     padding-right: 150px;
@@ -136,7 +134,6 @@ a:hover{
     #sex{
         padding-left: 17px;
     }
-    // position: relative;
 }
 
 .Menu-ForBurger-Open{
@@ -160,7 +157,7 @@ a:hover{
     }
     .Welcome__inf__h {
         text-align: left;
-        font-family: $Forum;
+        font-family: $forum;
         font-size: 50px;
     }
     .Welcome__inf__text{
