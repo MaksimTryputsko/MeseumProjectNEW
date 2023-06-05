@@ -47,10 +47,13 @@ function testRadio (arg) {
   sum = 0
   if((arg === 'first') || (arg === 'firstT')){
     radioHelper(options[0],priceFirstTicketBasic,priceFirstTicketSenior)
+    return
   } else if((arg === 'second') || (arg === 'secondT')){
     radioHelper(options[1],priceSecondTicketBasic,priceSecondTicketSenior)
+    return
   } else if ((arg === 'third') || (arg === 'thirdT')){
     radioHelper(options[2],priceThirdTicketBasic,priceThirdTicketSenior)
+    return
   }
 }
 
@@ -72,7 +75,7 @@ blockRadioBtns.addEventListener('click',(event) =>{
   } else if (target === radioBtns[2]){
     testRadio(event.target.value)
   }
-  })
+})
 
 const wrapper = document.querySelector('wr');
 let countInput = document.getElementById('count');
@@ -111,11 +114,11 @@ let units2 = countInput2.value.replace(/\d/g, '');
 
 butP2.addEventListener('click', function(){
   btnInputPlus(countInput2, ticketsModalSenior, countInput4, units2);
-  if(radioBtns[0].checked === true){
+  if(radioBtns[0].checked){
     helperBtnPlus(priceFirstTicketSenior,totalSumOfSeniorModal)
-  } else if(radioBtns[1].checked === true){
+  } else if(radioBtns[1].checked){
     helperBtnPlus(priceSecondTicketSenior,totalSumOfSeniorModal)
-  } else if(radioBtns[2].checked === true){
+  } else if(radioBtns[2].checked){
     helperBtnPlus(priceThirdTicketSenior,totalSumOfSeniorModal)
   }
 })
@@ -123,11 +126,11 @@ butP2.addEventListener('click', function(){
 butM2.addEventListener('click', function(){
   if(parseInt(countInput2.value) > 1) {
       btnInputMinus(countInput2, ticketsModalSenior, countInput4,units2)
-      if(radioBtns[0].checked === true){
+      if(radioBtns[0].checked){
         helperBtnMinus(priceFirstTicketSenior,totalSumOfSeniorModal);
-      } else if(radioBtns[1].checked === true){
+      } else if(radioBtns[1].checked){
           helperBtnMinus(priceSecondTicketSenior,totalSumOfSeniorModal);
-      } else if(radioBtns[2].checked === true){
+      } else if(radioBtns[2].checked){
            helperBtnMinus(priceThirdTicketSenior,totalSumOfSeniorModal);
       }
   }

@@ -10,7 +10,7 @@ function attachModalEvents() {
 }  
 function handleEscape (e){
   if(e.key =='Escape') {
-    loseModal();
+    closeModal();
   }
 }
 function closeModal() {
