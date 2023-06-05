@@ -65,16 +65,13 @@ let priceSecondTicketSenior = 12.5;
 
 let priceThirdTicketBasic = 40;
 let priceThirdTicketSenior = 20;
-
+console.log(radioBtns)
 blockRadioBtns.addEventListener('click',(event) =>{
-  let target = event.target
-  if(target === radioBtns[0]){ 
-    testRadio(event.target.value)
-  } else if(target === radioBtns[1]){
-    testRadio(event.target.value)
-  } else if (target === radioBtns[2]){
+radioBtns.forEach(function(item){
+  if(item === event.target){
     testRadio(event.target.value)
   }
+})
 })
 
 const wrapper = document.querySelector('wr');
