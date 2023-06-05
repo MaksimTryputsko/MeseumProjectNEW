@@ -1,5 +1,5 @@
 @import 'var.scss';
-.Virtual-tour {
+.virtual-tour {
     padding-top: 90px;
     @include wrapper;
     display:flex;
@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
 }
-.Virtual-tour__wrapper{
+.virtual-tour__wrapper{
     display:flex;
     align-items: flex-start;
     flex-direction: column;
@@ -15,18 +15,18 @@
 
     width: 100%;
 }
-.Virual-tour__h {
+.virual-tour__h {
     font-family: $forum;
     font-size: 80px;
     color: $colorH;
     
 }
-.Virtual-tour__line {
+.virtual-tour__line {
     width: 100%;
     height: 3px;
     background-color: $lineColor;
 }
-.Virtual-tour__flexBox {
+.virtual-tour__flexBox {
     padding-top: 70px;
     padding-bottom: 70px;
     display:flex;
@@ -34,58 +34,58 @@
     justify-content: center;
     gap:50px;
 }
-.Virtual-tour__flexBox__item {
+.virtual-tour__flexBox__item {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.Virtual-tour__flexBox__item__h3 {
+.virtual-tour__flexBox__item__h3 {
     font-family: $forum;
     font-size: 32px;
 
 }
-.Virtual-tour__flexBox__item__line {
+.virtual-tour__flexBox__item__line {
     width: 300px;
     height: 3px;
     background-color: $lineColor;
 }
-.Virtual-tour__flexBox__item__name {
+.virtual-tour__flexBox__item__name {
     font-family: $roboto;
 }
-.Virtual-tour__flexBox__item__address {
+.virtual-tour__flexBox__item__address {
     font-family: $roboto;
     font-weight: 18px;
 }
 @media(max-width: 1024px){
-    .Virtual-tour__flexBox__item__img{
+    .virtual-tour__flexBox__item__img{
         img{
             width: 330px;
             height: 215px;
         }
     }
-    .Virual-tour__h{
+    .virual-tour__h{
         font-size: 50px;
     }
 }
 @media(max-width: 768px){
-    .Virtual-tour__flexBox__item__img{
+    .virtual-tour__flexBox__item__img{
         img{
             width: 280px;
             height: 180px;
         }
     }
-    .Virual-tour__h{
+    .virual-tour__h{
         font-size: 40px;
     }
-    .Virtual-tour{
+    .virtual-tour{
         padding-top: 30px;
     }
-    .Virtual-tour__flexBox{
+    .virtual-tour__flexBox{
         padding-top: 30px;
         padding-bottom: 30px;
         gap:30px;
     }
-    .Virtual-tour__wrapper{
+    .virtual-tour__wrapper{
         gap:25px;
     }
 }

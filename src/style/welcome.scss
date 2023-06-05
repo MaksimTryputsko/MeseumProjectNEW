@@ -1,6 +1,6 @@
 @import 'var.scss';
 
-.Welcome {
+.welcome {
     @include wrapper;
     display:flex;
     justify-content: center;
@@ -9,44 +9,42 @@
     background-color: $black;
     color: $white;
 }
-.Welcome-Wrapper{
+.welcome-wrapper{
     background-color: $black;
     padding-bottom: 60px;
 }
-.Welcome__inf {
+.welcome__inf {
       transform:translateX(117.5px);
       z-index:2;
     
 }
-.Welcome__inf__h {
+.welcome__inf__h {
     text-align: left;
     font-family: $forum;
     font-size: 75px;
    
 }
-.Welcome__inf__text {
+.welcome__inf__text {
     font-family: $roboto;
     font-size: 28px;
 
     padding-top: 10px;
 }
-.Welcome__inf__btn {
+.welcome__inf__btn {
     padding-top: 70px;
     
 }
-.Welcome__inf__btn__button {
+.welcome__inf__btn__button {
     background-color: $lineColor;
     color: $white;
     width: 330px;
     height: 75px;
-
+    font-family: $roboto;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    
-    font-family: $roboto;
 }
-.Welcome__inf__btn__button:hover{
+.welcome__inf__btn__button:hover{
     background: $gold;
 }
 .wrapper-for-menuFlex{
@@ -70,7 +68,7 @@
         background-color: $spanColor;
     }
 }
-.Welcome-Wrapper__menu{
+.welcome-Wrapper__menu{
     @include wrapper;
     background-color: $black;
     height: 60px;
@@ -106,7 +104,7 @@ a:hover{
 .newNav{
     display: none;
 }
-.Menu-ForBurger{
+.menuForBurger{
     ul{
     display: none;
     list-style-type: none;
@@ -136,7 +134,7 @@ a:hover{
     }
 }
 
-.Menu-ForBurger-Open{
+.menu-ForBurger-Open{
     ul{
        display: flex; 
     }
@@ -155,34 +153,34 @@ a:hover{
     .swiper-button-prev, .swiper-button-next {
         display: none;
     }
-    .Welcome__inf__h {
+    .welcome__inf__h {
         text-align: left;
         font-family: $forum;
         font-size: 50px;
     }
-    .Welcome__inf__text{
+    .welcome__inf__text{
         font-size: 24px;
     }
-    .Welcome__inf__btn__button{
+    .welcome__inf__btn__button{
         width: 300px;
         height: 60px;
     
     }
-    .Welcome__inf__h{
+    .welcome__inf__h{
         width: 500px;
         letter-spacing: .5rem;
         position: absolute;
         top: -130px;
     }
-    .Welcome__inf {
+    .welcome__inf {
     transform:translateX(40.5px);
     z-index:2;
     padding-bottom: 70px;
     }
-    .Welcome{
+    .welcome{
         align-items: end;
     }
-    .Welcome__inf__btn {
+    .welcome__inf__btn {
         padding-top: 40px;
     }
     .brForMedia{
@@ -194,13 +192,12 @@ a:hover{
     .burger{
         display: block;
     }   
-    .header__LOUVRE-Menu{
+    .header__louvre-menu{
         display: none;
     }
 }
 
 @media(max-width:913px){
-
     .swiper {
         width: 550px;
         height: 450px;
@@ -209,7 +206,7 @@ a:hover{
             height: 450px;
         }
     }
-    .Menu-ForBurger ul {
+    .menuForBurger ul {
         padding-bottom: 140px;
     }
 }
@@ -223,13 +220,13 @@ a:hover{
             height: 350px;
         }
     }
-    .Welcome__inf__h {
+    .welcome__inf__h {
         top: -120px
     }
 }
 
 @media(max-width: 768px){
-    .Menu-ForBurger ul{
+    .menuForBurger ul{
         padding-right: 0px;
         padding-bottom: 35px;
         padding-left: 35px;
@@ -242,7 +239,7 @@ a:hover{
             height: 520px;
         }
     }
-    .Welcome {
+    .welcome {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -250,19 +247,19 @@ a:hover{
     .Welcome__inf__btn__button{
         display: none;
     }
-    .Welcome__inf__h{
+    .welcome__inf__h{
         position: relative;
         top:0;
     }
-    .Welcome__inf{
+    .welcome__inf{
         padding-bottom: 0px;
     }
-    .Welcome__inf__h{
+    .welcome__inf__h{
         text-align: center;
         letter-spacing: 0.2rem;
         padding-bottom: 20px;
     }
-    .Welcome__inf__text{
+    .welcome__inf__text{
         text-align: center;
     }
 }
@@ -276,22 +273,22 @@ a:hover{
             height: 440px;
         }
     }
-    .Menu-ForBurger ul{
+    .menuForBurger ul{
         padding-left: 0;
     }
 }
 @media(max-width: 568px){
-    .Welcome__inf {
+    .welcome__inf {
         transform: translateX(0.5px);
     }
-    .Welcome__inf__h{
+    .welcome__inf__h{
         padding-bottom: 35px;
         font-size: 28px;
         span{
             display: none;
         }
     }
-    .Welcome__inf__text{
+    .welcome__inf__text{
         font-size: 16px;
     }
     .swiper {

@@ -9,20 +9,18 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
-.header__LOUVRE {
+.header__louvre {
     display: flex;
     align-items: center;
     gap: 26px;
     
 }
-
-.header__LOUVRE__text {
+.header__louvre__text {
     font-family: $forum;
     font-size: 28px;
 }
-.header__LOUVRE-Menu {
+.header__louvre-menu {
     ul{ 
         list-style-type: none;
         font-family: $roboto;

@@ -27,66 +27,55 @@
 swiper-container {
     width: 100%;
     height: 100%;
-  }
-
-  swiper-slide {
+}
+swiper-slide {
     text-align: center;
     font-size: 18px;
     background: $white;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  swiper-slide video {
+}
+swiper-slide video {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-
-  swiper-container {
+}
+swiper-container {
     width: 100%;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  swiper-slide {
+}
+swiper-slide {
     background-size: cover;
     background-position: center;
-  }
-
-  .mySwiper {
+}
+.mySwiper {
     height: 80%;
     width: 100%;
-  }
-
-  .mySwiper2 {
+}
+.mySwiper2 {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
-  }
-
-  .mySwiper2 swiper-slide {
+}
+.mySwiper2 swiper-slide {
     width: 25%;
     height: 100%;
     opacity: 0.4;
-  }
-
-  .mySwiper2 .swiper-slide-thumb-active {
+}
+.mySwiper2 .swiper-slide-thumb-active {
     opacity: 1;
-  }
-
-  swiper-slide video {
+}
+swiper-slide video {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  @media (max-width: 1024px){
+}
+@media (max-width: 1024px){
     .video {
       padding-top: 70px;
     }
@@ -102,8 +91,8 @@ swiper-container {
     .video__name__h{
       font-size: 50px;
     }
-  }
-  @media(max-width: 768px){
+}
+@media(max-width: 768px){
     .video__name__h{
       font-size: 40px;
     }
@@ -114,9 +103,9 @@ swiper-container {
     .video__name {
       padding-bottom: 20px;
   }
-  }
-  @media(max-width: 420px){
+}
+@media(max-width: 420px){
     .video__name__h{
       font-size: 28px;
     }
-  }
+}

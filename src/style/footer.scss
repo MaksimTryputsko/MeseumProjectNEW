@@ -41,7 +41,6 @@
 .footer__first__icons {
     display: flex;
     align-items: flex-end;
-
     gap: 24px;
     div{
         width: 50px;
@@ -66,7 +65,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 @media(max-width: 1131px){
     .footer__first__nav2{
         padding-left: 50px;
@@ -97,7 +95,6 @@
         padding-left: 250px;
     }
 }
-
 @media(max-width:595px){
     .footer__first__BoxIcons {
         padding-left: 70px;

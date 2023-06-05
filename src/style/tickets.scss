@@ -2,12 +2,11 @@
 .tickets {
     @include wrapperForTickers;
     padding-top: 85px;
+    font-family: $roboto;
 
     display: flex;
     flex-direction: column;
-    gap:50px;
-
-    font-family: $roboto;
+    gap: 50px;
 }
 .tickets__name {
     font-size: 80px;
@@ -38,34 +37,33 @@
     flex-direction: column;
     gap:40px;
         input {
-         cursor: pointer;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-      
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-      
-        border: 2px solid $colorForBorder;
-        transition: 0.2s all linear;
-        outline: none;
-        margin-right: 5px;
-      
-        position: relative;
-        div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+        
+            border: 2px solid $colorForBorder;
+            transition: 0.2s all linear;
+            outline: none;
+            margin-right: 5px;
+        
+            position: relative;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            }  
+            input:checked {
+                border: 5px solid $black;
+            }
+            label{
+                cursor: pointer;
         }
-      }
-      
-      input:checked {
-        border: 5px solid $black;
-      }
-      label{
-        cursor: pointer;
-      }
 }
 .flexWrapper{
     display: flex;
@@ -89,28 +87,23 @@
     display: flex;
     border: 2px solid $black;
     width: 150px;
-
-
 }
 #count,#count2, #count3, #count4 {
     width: 85px;
     text-align: center;
     border: none;
 }
-
 #bminus, #bplus, #bminus2, #bplus2, #bminus3, #bplus3, #bminus4, #bplus4{
     width: 35px;
     border: none;
     font-size: 32px;
     background-color: $white;
-   
 }
 #bminus3, #bplus3, #bminus4, #bplus4{
-        background-color: $black;
-        color: $white;
-        width: 50px;
-    }
-
+    background-color: $black;
+    color: $white;
+    width: 50px;
+}
 .tickets__inf__calc__amount__batton__item {
     width: 175px;
     height: 50px;
@@ -160,7 +153,6 @@
         gap:0px;
     }
 }
-
 @media(max-width: 1024px){
     .tickets__inf__calc__items{
         display: none;
@@ -179,7 +171,6 @@
         gap:37px;
     }
 }
-
 @media(max-width: 900px){
     .tickets__inf__foto{
         img{
