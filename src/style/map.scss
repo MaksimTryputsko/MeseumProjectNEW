@@ -30,13 +30,12 @@
 .map__block__first__h {
     font-size: 28px;
     font-weight: bold;
-
 }
 #map {
     height: 680px;
-     width: 960px;
-     filter: grayscale(100%);
-    }
+    width: 960px;
+    filter: grayscale(100%);
+}
 
 @media(max-width: 1578px){
     #map {
@@ -56,8 +55,8 @@
     }
     #map {
         height: 454px;
-         width: 694px;
-        }
+        width: 694px;
+    }
         
     .map__box {
         gap:40px;
@@ -68,38 +67,38 @@
         align-items: start;
         flex-direction: column;
         gap: 10px;
-        }
-        #map {
-            height: 476px;
-             width: 728px;  
-            } 
+    }
+    #map {
+        height: 476px;
+        width: 728px;  
+    } 
 }
 @media(max-width:765px){
     #map {
         height: 476px;
          width: 628px;  
-        }
-        .map__h{
-            font-size: 40px;
-        }
-        .map__box {
-            gap:20px;
-        }   
-        .map__block__first__h{
-            font-size: 20px;
-        }  
+    }
+    .map__h{
+        font-size: 40px;
+    }
+    .map__box {
+        gap:20px;
+    }   
+    .map__block__first__h{
+        font-size: 20px;
+    }  
 }
 @media(max-width:664px){
     #map {
         height: 400px;
          width: 528px;  
-        } 
+    } 
 }
 @media(max-width: 561px){
     #map {
         height: 248px;
          width: 380px;  
-        } 
+    } 
 }
 @media(max-width: 420px){
     .map__h{

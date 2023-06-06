@@ -21,10 +21,12 @@ const seniorPriceFirst = document.querySelector('.seniorPriceFirst')
 const basicPriceSecond = document.querySelector('.SumOfBasic')
 const seniorPriceSecond = document.querySelector('.SumOfSenior')
 
-const createStyleFlex = document.querySelector('.inputItems__entryTicket__value2')
+const createStyleFlex = document.querySelector('.inputItems__entry-ticket__value2')
 const blockRadioBtns = document.querySelector('.tickets__inf__calc__items')
 
+const addOne = 1
 let sum = 30;
+
 function radioHelper(item,priceBasik, priceSenior ){
   sum = (parseInt(countInput.value) * priceBasik) + (parseInt(countInput2.value) * priceSenior)
   totalSum.innerHTML = `Total € ${sum}`
@@ -48,10 +50,10 @@ function testRadio (arg) {
   if((arg === 'first') || (arg === 'firstT')){
     radioHelper(options[0],priceFirstTicketBasic,priceFirstTicketSenior)
     return
-  } else if((arg === 'second') || (arg === 'secondT')){
+  } if((arg === 'second') || (arg === 'secondT')){
     radioHelper(options[1],priceSecondTicketBasic,priceSecondTicketSenior)
     return
-  } else if ((arg === 'third') || (arg === 'thirdT')){
+  } if ((arg === 'third') || (arg === 'thirdT')){
     radioHelper(options[2],priceThirdTicketBasic,priceThirdTicketSenior)
     return
   }
@@ -65,13 +67,12 @@ let priceSecondTicketSenior = 12.5;
 
 let priceThirdTicketBasic = 40;
 let priceThirdTicketSenior = 20;
-console.log(radioBtns)
+
 blockRadioBtns.addEventListener('click',(event) =>{
-radioBtns.forEach(function(item){
-  if(item === event.target){
-    testRadio(event.target.value)
-  }
-})
+let arr = new Array(radioBtns)
+if(!(arr.includes(event.target))){
+  testRadio(event.target.value)
+}
 })
 
 const wrapper = document.querySelector('wr');
@@ -80,25 +81,30 @@ let butM = document.getElementById('bminus');
 let butP = document.getElementById('bplus');
 let units = countInput.value.replace(/\d/g, '');
 butP.addEventListener('click', function(){
-  btnInputPlus(countInput, ticketsModalBasik, countInput3, units);
-  if(radioBtns[0].checked === true){
-  helperBtnPlus(priceFirstTicketBasic,totalSumOfBasikModal)
-  } else if(radioBtns[1].checked === true){
-    helperBtnPlus(priceSecondTicketBasic,totalSumOfBasikModal)
-  } else if(radioBtns[2].checked === true){
-    helperBtnPlus(priceThirdTicketBasic,totalSumOfBasikModal)
+  btnInputValues(countInput, ticketsModalBasik, countInput3, units, addOne);
+  if(radioBtns[0].checked){
+    helperBtnCalculation(priceFirstTicketBasic,totalSumOfBasikModal)
+  } if(radioBtns[1].checked){
+    helperBtnCalculation(priceSecondTicketBasic,totalSumOfBasikModal)
+    return
+  } if(radioBtns[2].checked){
+    helperBtnCalculation(priceThirdTicketBasic,totalSumOfBasikModal)
+    return
   }
 })
   
 butM.addEventListener('click', function(){
   if(parseInt(countInput.value) > 1) {
-      btnInputMinus(countInput, ticketsModalBasik, countInput3,units)
-      if(radioBtns[0].checked === true){
-        helperBtnMinus(priceFirstTicketBasic,totalSumOfBasikModal);
-      } else if(radioBtns[1].checked === true){
-        helperBtnMinus(priceSecondTicketBasic,totalSumOfBasikModal);
-      } else if(radioBtns[2].checked === true){
-        helperBtnMinus(priceThirdTicketBasic,totalSumOfBasikModal);
+      btnInputValues(countInput, ticketsModalBasik, countInput3, units, -addOne)
+      if(radioBtns[0].checked){
+        helperBtnCalculation(-priceFirstTicketBasic,totalSumOfBasikModal);
+        return
+      } if(radioBtns[1].checked){
+        helperBtnCalculation(-priceSecondTicketBasic,totalSumOfBasikModal);
+        return
+      } if(radioBtns[2].checked){
+        helperBtnCalculation(-priceThirdTicketBasic,totalSumOfBasikModal);
+        return
       }
   }
 })
@@ -110,25 +116,31 @@ let butP2 = document.getElementById('bplus2');
 let units2 = countInput2.value.replace(/\d/g, '');
 
 butP2.addEventListener('click', function(){
-  btnInputPlus(countInput2, ticketsModalSenior, countInput4, units2);
+  btnInputValues(countInput2, ticketsModalSenior, countInput4, units2, addOne);
   if(radioBtns[0].checked){
-    helperBtnPlus(priceFirstTicketSenior,totalSumOfSeniorModal)
-  } else if(radioBtns[1].checked){
-    helperBtnPlus(priceSecondTicketSenior,totalSumOfSeniorModal)
-  } else if(radioBtns[2].checked){
-    helperBtnPlus(priceThirdTicketSenior,totalSumOfSeniorModal)
+    helperBtnCalculation(priceFirstTicketSenior,totalSumOfSeniorModal)
+    return
+  } if(radioBtns[1].checked){
+    helperBtnCalculation(priceSecondTicketSenior,totalSumOfSeniorModal)
+    return
+  } if(radioBtns[2].checked){
+    helperBtnCalculation(priceThirdTicketSenior,totalSumOfSeniorModal)
+    return
   }
 })
    
 butM2.addEventListener('click', function(){
   if(parseInt(countInput2.value) > 1) {
-      btnInputMinus(countInput2, ticketsModalSenior, countInput4,units2)
+      btnInputValues(countInput2, ticketsModalSenior, countInput4, units2, -addOne)
       if(radioBtns[0].checked){
-        helperBtnMinus(priceFirstTicketSenior,totalSumOfSeniorModal);
-      } else if(radioBtns[1].checked){
-          helperBtnMinus(priceSecondTicketSenior,totalSumOfSeniorModal);
-      } else if(radioBtns[2].checked){
-           helperBtnMinus(priceThirdTicketSenior,totalSumOfSeniorModal);
+        helperBtnCalculation(-priceFirstTicketSenior,totalSumOfSeniorModal);
+        return
+      } if(radioBtns[1].checked){
+          helperBtnCalculation(-priceSecondTicketSenior,totalSumOfSeniorModal);
+          return
+      } if(radioBtns[2].checked){
+          helperBtnCalculation(-priceThirdTicketSenior,totalSumOfSeniorModal);
+          return
       }
   }
 })
@@ -147,25 +159,31 @@ let butP3 = document.getElementById('bplus3');
 let units3 = countInput3.value.replace(/\d/g, '');
 
 butP3.addEventListener('click', function(){
-  btnInputPlus(countInput3, ticketsModalBasik, countInput, units3);
+  btnInputValues(countInput3, ticketsModalBasik, countInput, units3, addOne);
   if(selectTicket.value === 'firstT'){
-    helperBtnPlus(priceFirstTicketBasic,totalSumOfBasikModal)
-  } else if(selectTicket.value === 'secondT'){
-    helperBtnPlus(priceSecondTicketBasic,totalSumOfBasikModal)
-  } else if(selectTicket.value === 'thirdT'){
-    helperBtnPlus(priceThirdTicketBasic,totalSumOfBasikModal)
+    helperBtnCalculation(priceFirstTicketBasic,totalSumOfBasikModal)
+    return
+  } if(selectTicket.value === 'secondT'){
+    helperBtnCalculation(priceSecondTicketBasic,totalSumOfBasikModal)
+    return
+  } if(selectTicket.value === 'thirdT'){
+    helperBtnCalculation(priceThirdTicketBasic,totalSumOfBasikModal)
+    return
   }
 })
 
 butM3.addEventListener('click', function(){
   if(parseInt(countInput3.value) > 1) {
-      btnInputMinus(countInput3, ticketsModalBasik, countInput,units3)
+      btnInputValues(countInput3, ticketsModalBasik, countInput,units3, -addOne)
       if(selectTicket.value === 'firstT'){
-        helperBtnMinus(priceFirstTicketBasic,totalSumOfBasikModal);
-      } else if(selectTicket.value === 'secondT'){
-        helperBtnMinus(priceSecondTicketBasic,totalSumOfBasikModal);
-      } else if(selectTicket.value === 'thirdT'){
-        helperBtnMinus(priceThirdTicketBasic,totalSumOfBasikModal);
+        helperBtnCalculation(-priceFirstTicketBasic,totalSumOfBasikModal);
+        return
+      } if(selectTicket.value === 'secondT'){
+        helperBtnCalculation(-priceSecondTicketBasic,totalSumOfBasikModal);
+        return
+      } if(selectTicket.value === 'thirdT'){
+        helperBtnCalculation(-priceThirdTicketBasic,totalSumOfBasikModal);
+        return
       }
   }
 })   
@@ -177,49 +195,46 @@ let butP4 = document.getElementById('bplus4');
 let units4 = countInput4.value.replace(/\d/g, '');
 
 butP4.addEventListener('click', function(){
-  btnInputPlus(countInput4, ticketsModalSenior, countInput2, units4);
+  btnInputValues(countInput4, ticketsModalSenior, countInput2, units4, addOne);
     if(selectTicket.value === 'firstT'){
-    helperBtnPlus(priceFirstTicketSenior,totalSumOfSeniorModal)
-  } else if(selectTicket.value === 'secondT'){
-    helperBtnPlus(priceSecondTicketSenior,totalSumOfSeniorModal)
-  } else if(selectTicket.value === 'thirdT'){
-    helperBtnPlus(priceThirdTicketSenior,totalSumOfSeniorModal)
+      helperBtnCalculation(priceFirstTicketSenior,totalSumOfSeniorModal)
+    return
+  } if(selectTicket.value === 'secondT'){
+    helperBtnCalculation(priceSecondTicketSenior,totalSumOfSeniorModal)
+    return
+  } if(selectTicket.value === 'thirdT'){
+    helperBtnCalculation(priceThirdTicketSenior,totalSumOfSeniorModal)
+    return
   }
 })
     
 butM4.addEventListener('click', function(){
   if(parseInt(countInput4.value) > 1) {
-      btnInputMinus(countInput4, ticketsModalSenior, countInput2,units4);
+    btnInputValues(countInput4, ticketsModalSenior, countInput2,units4, -addOne);
       if(selectTicket.value === 'firstT'){
-        helperBtnMinus(priceFirstTicketSenior,totalSumOfSeniorModal);
-      } else if(selectTicket.value === 'secondT'){
-        helperBtnMinus(priceSecondTicketSenior,totalSumOfSeniorModal);
-      } else if(selectTicket.value === 'thirdT'){
-        helperBtnMinus(priceThirdTicketSenior,totalSumOfSeniorModal);
+        helperBtnCalculation(-priceFirstTicketSenior,totalSumOfSeniorModal);
+        return
+      } if(selectTicket.value === 'secondT'){
+        helperBtnCalculation(-priceSecondTicketSenior,totalSumOfSeniorModal);
+        return
+      } if(selectTicket.value === 'thirdT'){
+        helperBtnCalculation(-priceThirdTicketSenior,totalSumOfSeniorModal);
+        return
       }
   }
 })
-function btnInputPlus (input,typeOfTicket,inputFinish,unitsTest){
-  input.value = parseInt(input.value)+1+unitsTest;
+
+function btnInputValues (input,typeOfTicket,inputFinish,unitsTest, isPlus){
+  input.value = parseInt(input.value) + isPlus + unitsTest;
   typeOfTicket.innerHTML = input.value
   inputFinish.value = input.value;
 }
-function btnInputMinus (input,typeOfTicket,inputFinish,unitsTest){
-  input.value = parseInt(input.value)-1+unitsTest;
-  typeOfTicket.innerHTML = input.value
-  inputFinish.value = input.value;
-}
-function helperBtnPlus (price, finishSum) {
+
+function helperBtnCalculation(price, finishSum){
   sum = sum + price;
   totalSum.innerHTML = `Total € ${sum}`
   totalModalSum.innerHTML = sum;
   finishSum.innerHTML = +(finishSum.innerHTML) + price;
-}
-function helperBtnMinus (price, finishSum) {
-        sum = sum - price;
-        totalSum.innerHTML = `Total € ${sum}`
-        totalModalSum.innerHTML = sum;
-        finishSum.innerHTML = +(finishSum.innerHTML) - price;
 }
 
 const inputDate = document.getElementById('dateInput');
@@ -227,8 +242,9 @@ const inputTime = document.getElementById('timeInput');
 const dateSpan = document.querySelector('.dateSpan');
 const timeSpan = document.querySelector('.timeSpan');
 
-inputDate.onchange = changeDateAndTime;
-inputTime.onchange = changeDateAndTime;
+inputDate.addEventListener('change', changeDateAndTime)
+inputTime.addEventListener('change', changeDateAndTime)
+
 function changeDateAndTime () {
   dateSpan.innerHTML = inputDate.value
   timeSpan.innerHTML = inputTime.value
@@ -241,46 +257,48 @@ selectTicket.addEventListener('click', function (event){
   let target = event.target
   if(target.value === "firstT"){
     testRadio(event.target.value)
-  } else if (target.value === "secondT"){
+    return
+  } if (target.value === "secondT"){
     testRadio(event.target.value)
-  } else if (target.value === "thirdT"){
+    return
+  } if (target.value === "thirdT"){
     testRadio(event.target.value)
+    return
   }
 })
 
 const email = document.getElementById('email')
 const error = document.querySelector('.error')
 
-email.onblur = function() {
-  if (!email.value.includes('@')) { 
-    email.classList.add('invalid');
-    error.innerHTML = 'Пожалуйста, введите правильный email.'
-  }
-};
+email.addEventListener('blur', function() {
+      if (!email.value.includes('@')) { 
+        email.classList.add('invalid');
+        error.innerHTML = 'Пожалуйста, введите правильный email.'
+      }
+})
 
-email.onfocus = function() {
-  if (this.classList.contains('invalid')) {
-    this.classList.remove('invalid');
-    error.innerHTML = "";
+email.addEventListener('focus',function() {
+    if (this.classList.contains('invalid')) {
+      this.classList.remove('invalid');
+      error.innerHTML = "";
   }
-};
+})
 
 const name = document.getElementById('name')
 const errorForName = document.getElementById('errorForName')
 
-name.onblur = function() {
+name.addEventListener('blur', function() {
   if (name.value.includes('!','@','#','$','%','^','&','*','(',')','-','_','+','=','~')) { 
     name.classList.add('.invalidForName');
     errorForName.innerHTML = 'Имя введено не коректно.'
   }
-};
-
-name.onfocus = function() {
+})
+name.addEventListener('focus', function() {
   if (this.classList.contains('.invalidForName')) {
     this.classList.remove('.invalidForName');
     errorForName.innerHTML = "";
   }
-};
+})
 
 const scrolls = document.querySelectorAll('.scroll');
 scrolls.forEach(element => element.addEventListener('click',handleClick))
