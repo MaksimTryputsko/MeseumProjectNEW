@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: 1160px){
+@media (max-width: $extraLarge){
 .explore {
     flex-direction: column;
     justify-content: center;
@@ -53,7 +53,7 @@
     font-size: 50px;
 }
 }
-@media(max-width: 767px){
+@media(max-width: $medium){
     .explore__inf__text__item{
         display: none;
     }
@@ -74,7 +74,7 @@
         }
     }
 }
-@media(max-width: 650px) {
+@media(max-width: $medium-x) {
     .slider{
         img{
             width: 520px;
@@ -82,7 +82,7 @@
         }
     }
 }
-@media(max-width: 548px) {
+@media(max-width: $small) {
     .slider{
         img{
             width: 420px;
@@ -90,7 +90,7 @@
         }
     }
 }
-@media(max-width: 438px) {
+@media(max-width: $x-small) {
     .slider{
         img{
             width: 380px;

@@ -53,22 +53,20 @@
     height: 3px;
     background-color: $white;
 }
-@media(max-width: 698px){
+@media(max-width: $large){
     .problemImg{
         width: 250px;
     }
 }
-@media(max-width: 560px){
+@media(max-width: $small){
     .problemImg{
         width: 200px;
     }
 }
-@media(max-width: 460px){
+@media(max-width: $x-small){
     .problemImg{
         width: 175px;
     }
-}
-@media(max-width: 420px){
     .Menu-ForBurger ul {
         padding-left: 17px;
     }
@@ -79,3 +77,14 @@
         display: flex;
     }
 }
+// @media(max-width: 420px){
+//     .Menu-ForBurger ul {
+//         padding-left: 17px;
+//     }
+//     .imgs{
+//         display: none;
+//     }
+//     .newImgs{
+//         display: flex;
+//     }
+// }

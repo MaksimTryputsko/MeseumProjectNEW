@@ -134,11 +134,10 @@ a:hover{
     }
 }
 
-.menu-ForBurger-Open{
+.menuForBurgerOpen{
     ul{
        display: flex; 
     }
-    
 }
 @media (max-width: 1276px) {
  
@@ -188,7 +187,7 @@ a:hover{
     }
 }
 
-@media(max-width: 1024px){
+@media(max-width: $extraLarge){
     .burger{
         display: block;
     }   
@@ -197,7 +196,7 @@ a:hover{
     }
 }
 
-@media(max-width:913px){
+@media(max-width: $large){
     .swiper {
         width: 550px;
         height: 450px;
@@ -225,7 +224,7 @@ a:hover{
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: $medium){
     .menuForBurger ul{
         padding-right: 0px;
         padding-bottom: 35px;
@@ -264,7 +263,7 @@ a:hover{
     }
 }
 
-@media(max-width: 718px){
+@media(max-width: $x-large){
     .swiper {
         width: 540px;
         height: 440px;
@@ -277,7 +276,7 @@ a:hover{
         padding-left: 0;
     }
 }
-@media(max-width: 568px){
+@media(max-width: $small){
     .welcome__inf {
         transform: translateX(0.5px);
     }

@@ -56,7 +56,7 @@
     font-family: $roboto;
     font-weight: 18px;
 }
-@media(max-width: 1024px){
+@media(max-width: $extraLarge){
     .virtual-tour__flexBox__item__img{
         img{
             width: 330px;
@@ -67,7 +67,7 @@
         font-size: 50px;
     }
 }
-@media(max-width: 768px){
+@media(max-width: $medium){
     .virtual-tour__flexBox__item__img{
         img{
             width: 280px;

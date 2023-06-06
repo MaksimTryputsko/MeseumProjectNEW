@@ -75,7 +75,7 @@ swiper-slide video {
     height: 100%;
     object-fit: cover;
 }
-@media (max-width: 1024px){
+@media (max-width: $extraLarge){
     .video {
       padding-top: 70px;
     }
@@ -92,7 +92,7 @@ swiper-slide video {
       font-size: 50px;
     }
 }
-@media(max-width: 768px){
+@media(max-width: $medium){
     .video__name__h{
       font-size: 40px;
     }
@@ -104,7 +104,7 @@ swiper-slide video {
       padding-bottom: 20px;
   }
 }
-@media(max-width: 420px){
+@media(max-width: $x-small){
     .video__name__h{
       font-size: 28px;
     }

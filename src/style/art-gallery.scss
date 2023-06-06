@@ -37,7 +37,7 @@
         }
     }
 }
-@media(max-width: 1520px){
+@media(max-width: $extraExtraLarge){
     .art-gallery__items{
         img{
             width: 330px;
@@ -45,15 +45,7 @@
         }
     }
 }
-@media(max-width: 1436px){
-    .art-gallery__items{
-        img{
-            width: 330px;
-            height: 420px;
-        }
-    }
-}
-@media(max-width: 1076px){
+@media(max-width: $extraLarge){
     .art-gallery__items{
         img{
             width: 304px;
@@ -65,7 +57,7 @@
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: $medium){
     .art-gallery__items{
         img{
             width: 302px;
@@ -76,7 +68,7 @@
         font-size: 40px;
     }
 }
-@media(max-width:668px){
+@media(max-width: $medium-x){
     .art-gallery__items{
         img{
             width: 252px;
@@ -84,7 +76,7 @@
         }
     }
 }
-@media(max-width:564px){
+@media(max-width: $small){
     .art-gallery__items{
         img{
             width: 212px;
@@ -92,7 +84,7 @@
         }
     }
 }
-@media(max-width:492px){
+@media(max-width: $x-small){
     .art-gallery{
         padding-top: 20px;
     }

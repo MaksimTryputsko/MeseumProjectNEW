@@ -5,17 +5,18 @@ function handleClick(event) {
 }
 const moveto = new MoveTo();  
 
+const burger = document.querySelector('.burger');
 function burgerChange () {
   if(screen.width > 768){
     burger.classList.toggle('burgerX')
-    document.querySelector('.Welcome__inf').classList.toggle('newNav')
-    document.querySelector('.Menu-ForBurger').classList.toggle('Menu-ForBurger-Open')
+    document.querySelector('.welcome__inf').classList.toggle('newNav')
+    document.querySelector('.menuForBurger').classList.toggle('menuForBurgerOpen')
   } else {
     burger.classList.toggle('burgerX')
-    document.querySelector('.Welcome__inf').classList.toggle('newNav')
-    document.querySelector('.Menu-ForBurger').classList.toggle('Menu-ForBurger-Open')
-    document.querySelector('.Welcome__img').classList.toggle('closeSlide')
-    document.querySelector('.Welcome').classList.toggle('welcomeStart')
+    document.querySelector('.welcome__inf').classList.toggle('newNav')
+    document.querySelector('.menuForBurger').classList.toggle('menuForBurgerOpen')
+    document.querySelector('.welcome__img').classList.toggle('closeSlide')
+    document.querySelector('.welcome').classList.toggle('welcomeStart')
     document.querySelector('.blockMenu').classList.toggle('openBlockMenu')
   }
 }
