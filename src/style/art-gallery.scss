@@ -3,7 +3,6 @@
     padding-top: 70px;
     background-color: $black;
     @include wrapperForGallery;
-   
 }
 .art-gallery__text {
     font-family: $forum;
@@ -18,83 +17,28 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-   
 }
 @media(max-width: 1836px){
     .art-gallery__items{
-        img{
-            width: 404px;
-            height: 510px;
-        }
         gap:20px
     }
 }
-@media(max-width: 1664px){
-    .art-gallery__items{
-        img{
-            width: 360px;
-            height: 450px;
-        }
-    }
-}
-@media(max-width: $extraExtraLarge){
-    .art-gallery__items{
-        img{
-            width: 330px;
-            height: 420px;
-        }
-    }
-}
 @media(max-width: $extraLarge){
-    .art-gallery__items{
-        img{
-            width: 304px;
-            height: 380px;
-        }
-    }
     .art-gallery__text{
         font-size: 50px;
     }
 }
-
 @media(max-width: $medium){
-    .art-gallery__items{
-        img{
-            width: 302px;
-            height: 440px;
-        }
-    }
     .art-gallery__text{
         font-size: 40px;
-    }
-}
-@media(max-width: $medium-x){
-    .art-gallery__items{
-        img{
-            width: 252px;
-            height: 380px;
-        }
-    }
-}
-@media(max-width: $small){
-    .art-gallery__items{
-        img{
-            width: 212px;
-            height: 330px;
-        }
     }
 }
 @media(max-width: $x-small){
     .art-gallery{
         padding-top: 20px;
-    }
-    .art-gallery__items{
-        img{
-            width: 178px;
-            height: 223px;
-        }
-    }
-    .art-gallery__text{
-        font-size: 28px;
+        &__text {
+                font-size: 28px;
+            }
     }
 }
+    

@@ -97,7 +97,7 @@
                     
                 <div class="welcome__img">
                     
-                    <div class="swiper">
+                    <div class="swiper3">
                     
                         <div class="swiper-wrapper">
 
@@ -198,15 +198,15 @@
                     <div class="explore__inf__h">PICTURE EXPLORE</div>
                     <div class="explore__inf__line"></div>
                     <div class="explore__inf__text">
-                        <div class="explore__inf__text__item">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</div>
-                        <div class="explore__inf__text__item explore__inf__text__item2">It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</div>
-                        <div class="explore__inf__text__item explore__inf__text__item3">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</div>
+                        <div class="explore__inf__text__item">Las Meninas is a 1656 painting by Diego Velázquez, the leading<br> artist of the Spanish Golden Age.</div>
+                        <div class="explore__inf__text__item explore__inf__text__item2">It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had<br> gathered since the previous restoration in the 19th century.</div>
+                        <div class="explore__inf__text__item explore__inf__text__item3">The cleaning provoked furious protests, not because the picture had<br> been damaged in any way, but because it looked different.</div>
                     </div>
                 </div>
                 <div class="slider">
                     <img-comparison-slider>
-                    <img slot="first" src="img/explore/before.jpg" width="720" height="700"/>
-                    <img slot="second" src="img/explore/after.jpg" width="720" height="700"/>
+                    <img slot="first" src="img/explore/before.jpg"/>
+                    <img slot="second" src="img/explore/after.jpg"/>
                   </img-comparison-slider>
                 </div>
         </div>
@@ -217,67 +217,66 @@
                 <div class="video__name__h">VIDEO JOURNEY</div>
                 <div class="video__name__text">Enter and visit one of the most famous museums in the world and enjoy<br> masterpieces such as Mona Lisa or Hammurabi's Code</div>
             </div>
-            
-                <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
-                thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true">
-                <swiper-slide>
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
                     <video width="400" height="300" controls="controls" poster="img/video/poster0.jpg">
                         <source src="img/video/video0.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
-                </swiper-slide>
-                <swiper-slide>
+                  </div>
+                  <div class="swiper-slide">
                     <video width="400" height="300" controls="controls" poster="img/video/poster1.jpg">
                         <source src="img/video/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
-                </swiper-slide>
-                <swiper-slide>
+                  </div>
+                  <div class="swiper-slide">
                     <video width="400" height="300" controls="controls" poster="img/video/poster2.jpg">
                         <source src="img/video/video2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
-                </swiper-slide>
-                <swiper-slide>
+                  </div>
+                  <div class="swiper-slide">
                     <video width="400" height="300" controls="controls" poster="img/video/poster3.jpg">
                         <source src="img/video/video3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
-                </swiper-slide>
-                <swiper-slide>
+                  </div>
+                  <div class="swiper-slide">
                     <video width="400" height="300" controls="controls" poster="img/video/poster4.jpg">
                         <source src="img/video/video4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
-                </swiper-slide>
-              </swiper-container>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video width="400" height="300" controls="controls" poster="img/video/poster0.jpg">
+                            <source src="img/video/video0.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
+                      </div>
+                  <div class="swiper-slide">
+                    <video width="400" height="300" controls="controls" poster="img/video/poster1.jpg">
+                        <source src="img/video/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                  </div>
+                  <div class="swiper-slide">
+                    <video width="400" height="300" controls="controls" poster="img/video/poster2.jpg">
+                        <source src="img/video/video2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video width="400" height="300" controls="controls" poster="img/video/poster3.jpg">
+                        <source src="img/video/video3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                  </div>
+                  <div class="swiper-slide">
+                    <video width="400" height="300" controls="controls" poster="img/video/poster4.jpg">
+                        <source src="img/video/video4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                  </div>
+            </div>
             
-              <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
-              watch-slides-progress="true">
-                <swiper-slide>
-                    <video width="400" height="300" controls="controls" poster="img/video/poster0.jpg">
-                        <source src="img/video/video0.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    </video>
-                </swiper-slide>
-                <swiper-slide>
-                    <video width="400" height="300" controls="controls" poster="img/video/poster1.jpg">
-                        <source src="img/video/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    </video>
-                </swiper-slide>
-                <swiper-slide>
-                    <video width="400" height="300" controls="controls" poster="img/video/poster2.jpg">
-                        <source src="img/video/video2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    </video>
-                </swiper-slide>
-                <swiper-slide>
-                    <video width="400" height="300" controls="controls" poster="img/video/poster3.jpg">
-                        <source src="img/video/video3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    </video>
-                </swiper-slide>
-                <swiper-slide>
-                    <video width="400" height="300" controls="controls" poster="img/video/poster4.jpg">
-                        <source src="img/video/video4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    </video>
-                </swiper-slide>
-                
-              </swiper-container>
-            <!-- </div> -->
-
             </div>
         </div>
         <div class="art-gallery" id="targetGallery">
@@ -575,8 +574,8 @@
 
         <div class="parallaxFoto">
             <picture>
-                <source srcset="img/fotoInBody/forMediaParallax.svg" media="(max-width: 420px)">
-                <img src="img/fotoInBody/parallax 1.svg" alt="gallary" style="max-width: 100%;">
+                <source srcset="img/fotoInBody/forMediaParallax.svg" class="pictureMedia" media="(max-width: 420px)">
+                <img src="img/fotoInBody/parallax 1.svg" alt="gallary">
             </picture>
             
         </div>
@@ -591,9 +590,8 @@
                     <div class="map__block__first__phone">phone: +33(0) 1 40 20 50 50</div>
                     <div class="map__block__first__mail">mail: info@louvre.fr</div>
                 </div>
-                <div class="map__block__second">
+                <div class="map__block__second">     
                     <div id="map"></div>
-
     
                 </div>
             </div>

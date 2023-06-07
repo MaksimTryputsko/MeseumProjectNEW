@@ -57,23 +57,11 @@
     font-weight: 18px;
 }
 @media(max-width: $extraLarge){
-    .virtual-tour__flexBox__item__img{
-        img{
-            width: 330px;
-            height: 215px;
-        }
-    }
     .virual-tour__h{
         font-size: 50px;
     }
 }
 @media(max-width: $medium){
-    .virtual-tour__flexBox__item__img{
-        img{
-            width: 280px;
-            height: 180px;
-        }
-    }
     .virual-tour__h{
         font-size: 40px;
     }

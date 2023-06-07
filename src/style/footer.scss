@@ -91,10 +91,9 @@
     }
     .footer__first__BoxIcons{
         padding-left: 250px;
-    }
-    
+    }    
 }
-@media(max-width:595px){
+@media(max-width: $smallForFotter){
     .footer__first__BoxIcons {
         padding-left: 70px;
     }

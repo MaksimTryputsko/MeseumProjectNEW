@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 100%;
 }
 .explore__inf__h {
     font-family: $forum;
@@ -35,7 +34,11 @@
         color: $colorException;
     }
 }
-
+.slider{
+    img{
+        height: 100%;
+    }   
+}
 @media (max-width: $extraLarge){
 .explore {
     flex-direction: column;
@@ -64,37 +67,5 @@
     }
     .explore__inf__h{
         font-size: 40px;
-    }
-}
-@media(max-width: 736px) {
-    .slider{
-        img{
-            width: 620px;
-            height: 600px;
-        }
-    }
-}
-@media(max-width: $medium-x) {
-    .slider{
-        img{
-            width: 520px;
-            height: 500px;
-        }
-    }
-}
-@media(max-width: $small) {
-    .slider{
-        img{
-            width: 420px;
-            height: 400px;
-        }
-    }
-}
-@media(max-width: $x-small) {
-    .slider{
-        img{
-            width: 380px;
-            height: 368px;
-        }
     }
 }
