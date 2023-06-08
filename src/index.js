@@ -48,12 +48,12 @@ function radioHelper(item, priceBasik, priceSenior) {
 function testRadio (arg) {
   sum = 0
 
-  if(arg === 'first' || arg === 'firstT') {
+  if (arg === 'first' || arg === 'firstT') {
     radioHelper(options[0],priceFirstTicketBasic,priceFirstTicketSenior)
     return
   }
 
-  if(arg === 'second' || arg === 'secondT') {
+  if (arg === 'second' || arg === 'secondT') {
     radioHelper(options[1],priceSecondTicketBasic,priceSecondTicketSenior)
     return
   } 
@@ -87,9 +87,9 @@ const priceThirdTicketBasic = 40;
 const priceThirdTicketSenior = 20;
 
 blockRadioBtns.addEventListener('click',(event) => {
-  let arr = Array.from(radioBtns)
+  const arr = Array.from(radioBtns)
 
-  if(arr.includes(event.target)) {
+  if (arr.includes(event.target)) {
     testRadio(event.target.value)
   }
 })
@@ -103,36 +103,36 @@ const units = countInput.value.replace(/\d/g, '');
 butP.addEventListener('click', function() { 
   btnInputValues(countInput, ticketsModalBasik, countInput3, units, addOne);
 
-  if(radioBtns[0].checked) {
+  if (radioBtns[0].checked) {
     helperBtnCalculation(priceFirstTicketBasic, totalSumOfBasikModal)
   }
 
-  if(radioBtns[1].checked) {
+  if (radioBtns[1].checked) {
     helperBtnCalculation(priceSecondTicketBasic, totalSumOfBasikModal)
     return
   } 
 
-  if(radioBtns[2].checked) {
+  if (radioBtns[2].checked) {
     helperBtnCalculation(priceThirdTicketBasic, totalSumOfBasikModal)
     return
   }
 })
   
 butM.addEventListener('click', function() {
-  if(parseInt(countInput.value) > 1) {
+  if (parseInt(countInput.value) > 1) {
       btnInputValues(countInput, ticketsModalBasik, countInput3, units, -addOne)
 
-      if(radioBtns[0].checked) {
+      if (radioBtns[0].checked) {
         helperBtnCalculation(-priceFirstTicketBasic, totalSumOfBasikModal);
         return
       } 
 
-      if(radioBtns[1].checked) {
+      if (radioBtns[1].checked) {
         helperBtnCalculation(-priceSecondTicketBasic, totalSumOfBasikModal);
         return
       } 
 
-      if(radioBtns[2].checked) {
+      if (radioBtns[2].checked) {
         helperBtnCalculation(-priceThirdTicketBasic, totalSumOfBasikModal);
         return
       }
@@ -148,37 +148,37 @@ const units2 = countInput2.value.replace(/\d/g, '');
 butP2.addEventListener('click', function() {
   btnInputValues(countInput2, ticketsModalSenior, countInput4, units2, addOne);
 
-  if(radioBtns[0].checked) {
+  if (radioBtns[0].checked) {
     helperBtnCalculation(priceFirstTicketSenior, totalSumOfSeniorModal)
     return
   } 
 
-  if(radioBtns[1].checked) {
+  if (radioBtns[1].checked) {
     helperBtnCalculation(priceSecondTicketSenior, totalSumOfSeniorModal)
     return
   } 
 
-  if(radioBtns[2].checked) {
+  if (radioBtns[2].checked) {
     helperBtnCalculation(priceThirdTicketSenior, totalSumOfSeniorModal)
     return
   }
 })
    
 butM2.addEventListener('click', function() {
-  if(parseInt(countInput2.value) > 1) {
+  if (parseInt(countInput2.value) > 1) {
       btnInputValues(countInput2, ticketsModalSenior, countInput4, units2, -addOne)
 
-      if(radioBtns[0].checked) {
+      if (radioBtns[0].checked) {
         helperBtnCalculation(-priceFirstTicketSenior, totalSumOfSeniorModal);
         return
       } 
 
-      if(radioBtns[1].checked) {
+      if (radioBtns[1].checked) {
           helperBtnCalculation(-priceSecondTicketSenior, totalSumOfSeniorModal);
           return
       }
 
-      if(radioBtns[2].checked) {
+      if (radioBtns[2].checked) {
           helperBtnCalculation(-priceThirdTicketSenior, totalSumOfSeniorModal);
           return
       }
@@ -201,37 +201,37 @@ const units3 = countInput3.value.replace(/\d/g, '');
 butP3.addEventListener('click', function() {
   btnInputValues(countInput3, ticketsModalBasik, countInput, units3, addOne);
 
-  if(selectTicket.value === 'firstT') {
+  if (selectTicket.value === 'firstT') {
     helperBtnCalculation(priceFirstTicketBasic, totalSumOfBasikModal)
     return
   }
 
-  if(selectTicket.value === 'secondT') {
+  if (selectTicket.value === 'secondT') {
     helperBtnCalculation(priceSecondTicketBasic, totalSumOfBasikModal)
     return
   } 
 
-  if(selectTicket.value === 'thirdT') {
+  if (selectTicket.value === 'thirdT') {
     helperBtnCalculation(priceThirdTicketBasic, totalSumOfBasikModal)
     return
   }
 })
 
 butM3.addEventListener('click', function() {
-  if(parseInt(countInput3.value) > 1) {
+  if (parseInt(countInput3.value) > 1) {
       btnInputValues(countInput3, ticketsModalBasik, countInput, units3, -addOne)
 
-      if(selectTicket.value === 'firstT') {
+      if (selectTicket.value === 'firstT') {
         helperBtnCalculation(-priceFirstTicketBasic, totalSumOfBasikModal);
         return
       } 
 
-      if(selectTicket.value === 'secondT') {
+      if (selectTicket.value === 'secondT') {
         helperBtnCalculation(-priceSecondTicketBasic, totalSumOfBasikModal);
         return
       } 
       
-      if(selectTicket.value === 'thirdT') {
+      if (selectTicket.value === 'thirdT') {
         helperBtnCalculation(-priceThirdTicketBasic, totalSumOfBasikModal);
         return
       }
@@ -247,37 +247,37 @@ const units4 = countInput4.value.replace(/\d/g, '');
 butP4.addEventListener('click', function() {
   btnInputValues(countInput4, ticketsModalSenior, countInput2, units4, addOne);
 
-  if(selectTicket.value === 'firstT') {
+  if (selectTicket.value === 'firstT') {
     helperBtnCalculation(priceFirstTicketSenior, totalSumOfSeniorModal)
     return
   }
 
-  if(selectTicket.value === 'secondT') {
+  if (selectTicket.value === 'secondT') {
     helperBtnCalculation(priceSecondTicketSenior, totalSumOfSeniorModal)
     return
   } 
 
-  if(selectTicket.value === 'thirdT') {
+  if (selectTicket.value === 'thirdT') {
     helperBtnCalculation(priceThirdTicketSenior, totalSumOfSeniorModal)
     return
   }
 })
     
 butM4.addEventListener('click', function() {
-  if(parseInt(countInput4.value) > 1) {
+  if (parseInt(countInput4.value) > 1) {
     btnInputValues(countInput4, ticketsModalSenior, countInput2, units4, -addOne);
 
-      if(selectTicket.value === 'firstT') {
+      if (selectTicket.value === 'firstT') {
         helperBtnCalculation(-priceFirstTicketSenior, totalSumOfSeniorModal);
         return
       } 
 
-      if(selectTicket.value === 'secondT') {
+      if (selectTicket.value === 'secondT') {
         helperBtnCalculation(-priceSecondTicketSenior, totalSumOfSeniorModal);
         return
       }
 
-      if(selectTicket.value === 'thirdT') {
+      if (selectTicket.value === 'thirdT') {
         helperBtnCalculation(-priceThirdTicketSenior, totalSumOfSeniorModal);
         return
       }
@@ -301,9 +301,9 @@ const options = document.querySelectorAll('.optionTicket')
 const valueTicketsSpan = document.querySelector('.valueSpan')
 
 selectTicket.addEventListener('click', function (event) {
-  let target = event.target
+  const target = event.target
 
-  if(target.value === "firstT") {
+  if (target.value === "firstT") {
     testRadio(event.target.value)
     return
   } 

@@ -7,7 +7,7 @@ const moveto = new MoveTo();
 
 const burger = document.querySelector('.burger');
 function burgerChange () {
-  if(screen.width > 768){
+  if (screen.width > 768){
     burger.classList.toggle('burgerX')
     document.querySelector('.welcome__inf').classList.toggle('newNav')
     document.querySelector('.menuForBurger').classList.toggle('menuForBurgerOpen')

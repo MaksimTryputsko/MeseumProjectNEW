@@ -1,5 +1,5 @@
-
 const modal = document.querySelector('.modal')
+
 function openModal () {
   modal.classList.add('open')
   attachModalEvents()
