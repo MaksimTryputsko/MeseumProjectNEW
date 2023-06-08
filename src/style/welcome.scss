@@ -1,0 +1,273 @@
+@import 'var.scss';
+
+.welcome {
+    @include wrapper;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $black;
+    color: $white;
+}
+.welcome-wrapper{
+    background-color: $black;
+    padding-bottom: 60px;
+}
+.welcome__inf {
+      transform:translateX(117.5px);
+      z-index:2;
+}
+.welcome__inf__h {
+    text-align: left;
+    font-family: $forum;
+    font-size: 75px;
+}
+.welcome__inf__text {
+    font-family: $roboto;
+    font-size: 28px;
+
+    padding-top: 10px;
+}
+.welcome__inf__btn {
+    padding-top: 70px;
+    
+}
+.welcome__inf__btn__button {
+    background-color: $lineColor;
+    color: $white;
+    width: 330px;
+    height: 75px;
+    font-family: $roboto;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.welcome__inf__btn__button:hover{
+    background: $gold;
+}
+.wrapper-for-menuFlex{
+    @include wrapper;
+     display:flex;
+    justify-content: flex-end;
+    background-color: $black;
+}
+.welcome__img{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper3 {
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+        max-width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        }
+    } 
+    .swiper-pagination{
+    span{
+        width: 16px;
+        height: 16px;
+        border-radius: 0px;
+        background-color: $spanColor;
+    }
+    }
+    .swiper-button-prev, .swiper-button-next {
+    padding-top: 300px;
+    }
+
+}
+
+.welcome-Wrapper__menu{
+    @include wrapper;
+    background-color: $black;
+    height: 60px;
+     display:flex;
+    flex-direction: row-reverse;
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+}
+a:hover{
+    color: $colorH;
+    font-weight: bold;
+}
+.burger{
+    background-image: url(/src/img/burger/Group\ 44\ \(2\).svg);
+    width: 25px;
+    height: 18px;
+    display: none;
+}
+.burgerX{
+    background-image: url(/src/img/burger/esc.svg);
+    width: 25px;
+    height: 25px;
+}
+.brForMedia{
+    display: none;
+}
+.newNav{
+    display: none;
+}
+.menuForBurger{
+    ul{
+    display: none;
+    list-style-type: none;
+    font-family: $roboto;
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 150px;
+    padding-bottom: 190px;
+    .three{
+            padding-left: 50px;
+        }
+    }
+    #one{
+        padding-left: 35px;
+    }
+    #two{
+        padding-left: 35px;
+    }
+    #four{
+        padding-left: 38px;
+    }
+    #five{
+        padding-left: 35px;
+    }
+    #sex{
+        padding-left: 17px;
+    }
+}
+
+.menuForBurgerOpen{
+    ul{
+       display: flex; 
+    }
+}
+@media (max-width: 1276px) {
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+    .welcome__inf__h {
+        text-align: left;
+        font-family: $forum;
+        font-size: 50px;
+    }
+    .welcome__inf__text{
+        font-size: 24px;
+    }
+    .welcome__inf__btn__button{
+        width: 300px;
+        height: 60px;
+    }
+    .welcome__inf__h{
+        letter-spacing: .5rem;
+        position: absolute;
+        top: -130px;
+    }
+    .welcome__inf {
+    transform:translateX(40.5px);
+    z-index:2;
+    padding-bottom: 70px;
+    }
+    .welcome{
+        align-items: end;
+    }
+    .welcome__inf__btn {
+        padding-top: 40px;
+    }
+    .brForMedia{
+        display: block;
+    }
+}
+
+@media(max-width: $extraLarge){
+    .burger{
+        display: block;
+    }   
+    .header__louvre-menu{
+        display: none;
+    }
+}
+
+@media(max-width: $large){
+    .menuForBurger ul {
+        padding-bottom: 140px;
+    }
+}
+
+@media(max-width:861px){
+    .welcome__inf__h {
+        top: -120px
+    }
+}
+
+@media(max-width: 1298px){
+    .menuForBurger ul{
+        padding-right: 0px;
+        padding-bottom: 35px;
+        padding-left: 35px;
+    }
+    .welcome{
+        display:block;
+    }
+    .welcome__inf {
+        transform: none;
+    }
+    .welcome {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome__inf__btn__button{
+        display: none;
+    }
+    .welcome__inf__h{
+        position: relative;
+        top:0;
+    }
+    .welcome__inf{
+        padding-bottom: 0px;
+    }
+    .welcome__inf__h{
+        text-align: center;
+        letter-spacing: 0.2rem;
+        padding-bottom: 20px;
+    }
+    .welcome__inf__text{
+        text-align: center;
+    }
+}
+
+@media(max-width: $x-large){
+    .menuForBurger ul{
+        padding-left: 0;
+    }
+}
+@media(max-width: $small){
+    .welcome__inf {
+        transform: translateX(0.5px);
+    }
+    .welcome__inf__h{
+        padding-bottom: 35px;
+        font-size: 28px;
+        span{
+            display: none;
+        }
+    }
+    .welcome__inf__text{
+        font-size: 16px;
+    }
+}

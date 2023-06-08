@@ -1,0 +1,114 @@
+.map__box {
+    margin-top: 85px;
+    @include wrapper;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.map__h {
+    font-family: $forum;
+    font-size: 80px;
+    color: $colorH;
+}
+.map__line {
+    width: 100%;
+    height: 3px;
+    background-color: $lineColor;
+}
+.map__block {
+    display:flex;
+    justify-content: space-between;
+    gap: 205px;
+}
+.map__block__first {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    font-family: $roboto;
+    font-size: 22px;
+}
+.map__block__first__h {
+    font-size: 28px;
+    font-weight: bold;
+}
+.map__block__second{
+    height: 100%;
+    width:100%;
+}
+#map {
+    width: 100%;
+    height: 620px;
+    filter: grayscale(100%);
+}
+
+@media(max-width: $extraExtraLarge){
+    #map {
+        height: 640px;
+        }   
+}
+@media(max-width: 1373px){
+    #map {
+        height: 600px;
+    }   
+}
+@media(max-width: $extraLarge){
+    .map__h{
+        font-size: 50px;
+    }
+    #map {
+        height: 454px;
+    }
+        
+    .map__box {
+        gap:40px;
+    }   
+}
+@media(max-width: $large){
+    .map__block {
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #map {
+        height: 476px;
+    } 
+}
+@media(max-width: $medium){
+    #map {
+        height: 476px;
+    }
+    .map__h{
+        font-size: 40px;
+    }
+    .map__box {
+        gap:20px;
+    }   
+    .map__block__first__h{
+        font-size: 20px;
+    }  
+}
+@media(max-width: $medium-x){
+    #map {
+        height: 400px;
+    } 
+}
+@media(max-width: $small){
+    #map {
+        height: 248px;
+    } 
+}
+@media(max-width: $x-small){
+    .map__h{
+        font-size: 28px;
+    }
+    .map__box {
+        gap:15px;
+    } 
+    .map__block__first__h{
+        font-size: 16px;
+    } 
+    .map__block__first{
+        gap:20px
+    }
+}

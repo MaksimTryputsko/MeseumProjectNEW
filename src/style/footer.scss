@@ -1,0 +1,140 @@
+.footer {
+    margin-top: 65px;
+    background-color: $black;
+    color: $white;
+    font-family: $roboto;
+
+    display:flex;
+    flex-direction: column;
+}
+.footer__first {
+    display: flex;
+    gap: 175px;
+}
+.footer__first__wrapper{
+    @include wrapperForFotter;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    padding-top: 90px;
+}
+.footer__first__h {
+    div{
+        font-family: $forum;
+        font-size: 28px;
+    }
+    display: flex;
+    gap: 25px;
+}
+.footer__first__nav1 {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.footer__first__nav2 {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.footer__first__icons {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    div{
+        width: 50px;
+        height: 50px;
+        border: 2px solid $white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.footer__line {
+    width: 100%;
+    height: 3px;
+    background-color: $grey;
+}
+.footer__second {
+    @include wrapper;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: $extraLarge){
+    .footer__first__nav2{
+        padding-left: 50px;
+    }
+    .footer__first{
+        gap: 40px;
+    }
+}
+@media(max-width: $large){
+    .footer__first__nav2{
+        padding-left: 0;
+    }
+    .footer__first__wrapper{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap:40px;
+    }
+    .footer__first{
+        gap: 90px;
+    }
+    .footer__first__nav2{
+        padding-left: 100px;
+    }
+    .footer__first__BoxIcons{
+        padding-left: 250px;
+    }    
+}
+@media(max-width: $smallForFotter){
+    .footer__first__BoxIcons {
+        padding-left: 70px;
+    }
+    .footer__first__nav2 {
+        padding-left: 30px;
+    }
+    .footer__first {
+        gap: 30px;
+    }
+    .footer__second__school{
+        display: none;
+    }
+}
+@media(max-width: $x-small){
+    .footer__first {
+        flex-direction: column;
+        a{
+            font-size: 16px;
+        }
+    }
+    
+    .footer__first__nav1{
+        flex-direction: row;
+        gap:90px;
+    }
+    .footer__first__nav2{
+        flex-direction: row;
+        padding-left: 0;
+        gap: 90px;
+    }
+    .footer__first__BoxIcons {
+        padding-left: 0;
+    }
+    .footer__first__h div {
+        font-size: 16px;
+    }
+    .footer__first__h {
+        align-items: center;
+        gap: 15px;
+    }
+    .footer__second__Username,.footer__second__date{
+        font-size: 16px;
+    }
+}

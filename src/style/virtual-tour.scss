@@ -1,0 +1,79 @@
+@import 'var.scss';
+.virtual-tour {
+    padding-top: 90px;
+    @include wrapper;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.virtual-tour__wrapper{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:45px;
+
+    width: 100%;
+}
+.virual-tour__h {
+    font-family: $forum;
+    font-size: 80px;
+    color: $colorH;
+    
+}
+.virtual-tour__line {
+    width: 100%;
+    height: 3px;
+    background-color: $lineColor;
+}
+.virtual-tour__flexBox {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:50px;
+}
+.virtual-tour__flexBox__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.virtual-tour__flexBox__item__h3 {
+    font-family: $forum;
+    font-size: 32px;
+
+}
+.virtual-tour__flexBox__item__line {
+    width: 300px;
+    height: 3px;
+    background-color: $lineColor;
+}
+.virtual-tour__flexBox__item__name {
+    font-family: $roboto;
+}
+.virtual-tour__flexBox__item__address {
+    font-family: $roboto;
+    font-weight: 18px;
+}
+@media(max-width: $extraLarge){
+    .virual-tour__h{
+        font-size: 50px;
+    }
+}
+@media(max-width: $medium){
+    .virual-tour__h{
+        font-size: 40px;
+    }
+    .virtual-tour{
+        padding-top: 30px;
+    }
+    .virtual-tour__flexBox{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap:30px;
+    }
+    .virtual-tour__wrapper{
+        gap:25px;
+    }
+}

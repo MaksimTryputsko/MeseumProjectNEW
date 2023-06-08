@@ -1,0 +1,30 @@
+@import 'mixin.scss';
+@import 'var.scss';
+header{
+    height: 150px;
+    @include wrapper;
+    background-color: $black;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__louvre {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    
+}
+.header__louvre__text {
+    font-family: $forum;
+    font-size: 28px;
+}
+.header__louvre-menu {
+    ul{ 
+        list-style-type: none;
+        font-family: $roboto;
+        display: flex;
+        gap: 55px;
+    }
+}

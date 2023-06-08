@@ -1,0 +1,44 @@
+@import 'var.scss';
+.art-gallery{
+    padding-top: 70px;
+    background-color: $black;
+    @include wrapperForGallery;
+}
+.art-gallery__text {
+    font-family: $forum;
+    color: $white;
+    font-size: 80px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+.art-gallery__items { 
+    display:flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 1836px){
+    .art-gallery__items{
+        gap:20px
+    }
+}
+@media(max-width: $extraLarge){
+    .art-gallery__text{
+        font-size: 50px;
+    }
+}
+@media(max-width: $medium){
+    .art-gallery__text{
+        font-size: 40px;
+    }
+}
+@media(max-width: $x-small){
+    .art-gallery{
+        padding-top: 20px;
+        &__text {
+                font-size: 28px;
+            }
+    }
+}
+    
